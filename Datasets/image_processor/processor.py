@@ -91,6 +91,7 @@ def save_image_from_array(array, output_path, enhance_contrast=False):
         output_path (str): Path to save the .png image.
         enhance_contrast (bool): Whether to apply contrast enhancement.
     """
+
     # Normalize the array if required
     if array.max() > 255 or array.min() < 0:
         array = 255 * (array - array.min()) / (array.max() - array.min())
@@ -129,6 +130,11 @@ def unpack_npz_to_png(npz_file, output_dir):
     data = np.load(npz_file)
     output_img_fname = output_dir.split("/")[1:]
     output_img_fname = "_".join(output_img_fname)
+
+    input_file_name = os.path.basename(npz_file)
+    input_file_name = os.path.splitext(input_file_name)[0]
+
+    output_file_name = os.path.join(output_dir, f"{input_file_name}.png")
 
     for key in data.files:
         array = data[key]
@@ -174,6 +180,6 @@ def process_npz_files_in_directory(input_dir, output_dir):
 
 
 # Example usage
-input_directory = "4_comp/"       # Replace with your input directory path
-output_directory = f"output_pngs/{input_directory}" # Replace with your output directory path
+input_directory = "../3_comp/input_data/"
+output_directory = "../3_comp/output_data/" 
 process_npz_files_in_directory(input_directory, output_directory)
