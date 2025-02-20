@@ -55,7 +55,7 @@ def save_rpm_question_image(array, output_path):
 
     # Draw a black separator line between the matrix and candidate answers
     separator_y = grid_size * height - 5  # Position of the line
-    draw.line([(0, separator_y), (canvas_width, separator_y)], fill=0, width=2)  # Black line
+    draw.line([(0, separator_y), (canvas_width, separator_y)], fill=0, width=5)  # Black line
 
     # Define answer labels
     answer_labels = "ABCDEFGH"
