@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from PIL import Image, ImageOps, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont
 
 def save_rpm_question_image(array, output_path):
     """
@@ -60,7 +60,7 @@ def save_rpm_question_image(array, output_path):
     # Define answer labels
     answer_labels = "ABCDEFGH"
 
-    # **Fix: Use PIL to paste the candidate images**
+    # **Draw candidate images and vertical separators**
     for idx in range(8, num_images):
         candidate_idx = idx - 8
         start_col = candidate_idx * width
@@ -75,6 +75,11 @@ def save_rpm_question_image(array, output_path):
         label_y = start_row + height + 5  
         draw.text((label_x, label_y), answer_labels[candidate_idx], fill=0, font=font, anchor="mm")
 
+        # **Draw vertical line after each candidate answer except the last**
+        if candidate_idx < 7:
+            separator_x = (candidate_idx + 1) * width
+            draw.line([(separator_x, start_row), (separator_x, canvas_height)], fill=0, width=2)
+
     # Save the final image
     try:
         img.save(output_path)
@@ -82,42 +87,8 @@ def save_rpm_question_image(array, output_path):
     except Exception as e:
         print(f"Error saving RPM question image at {output_path}: {e}")
 
-def save_image_from_array(array, output_path, enhance_contrast=False):
-    """
-    Saves a NumPy array as a .png image after normalization and optional contrast enhancement.
-    
-    Parameters:
-        array (numpy.ndarray): Input array to save as an image.
-        output_path (str): Path to save the .png image.
-        enhance_contrast (bool): Whether to apply contrast enhancement.
-    """
 
-    # Normalize the array if required
-    if array.max() > 255 or array.min() < 0:
-        array = 255 * (array - array.min()) / (array.max() - array.min())
-    
-    # Convert to uint8
-    array = array.astype(np.uint8)
-    
-    try:
-        # Handle different image modes
-        if len(array.shape) == 2:  # Grayscale
-            image = Image.fromarray(array, mode='L')
-        elif len(array.shape) == 3 and array.shape[2] in [3, 4]:  # RGB or RGBA
-            image = Image.fromarray(array, mode='RGB' if array.shape[2] == 3 else 'RGBA')
-        else:
-            raise ValueError(f"Unsupported array shape {array.shape}")
-        
-        # Optionally enhance contrast
-        if enhance_contrast:
-            image = ImageOps.autocontrast(image)
-        
-        image.save(output_path)
-        print(f"Saved {output_path}")
-    except Exception as e:
-        print(f"Error saving image at {output_path}: {e}")
-
-def unpack_npz_to_png(npz_file, output_dir):
+def unpack_npz_to_png(npz_file, output_path):
     """
     Unpacks an .npz file and saves its contents as .png images.
     Creates an RPM question layout for the "image" key.
@@ -126,16 +97,7 @@ def unpack_npz_to_png(npz_file, output_dir):
         npz_file (str): Path to the .npz file.
         output_dir (str): Directory to save the .png images.
     """
-    os.makedirs(output_dir, exist_ok=True)
     data = np.load(npz_file)
-    output_img_fname = output_dir.split("/")[1:]
-    output_img_fname = "_".join(output_img_fname)
-
-    input_file_name = os.path.basename(npz_file)
-    input_file_name = os.path.splitext(input_file_name)[0]
-
-    output_file_name = os.path.join(output_dir, f"{input_file_name}.png")
-
     for key in data.files:
         array = data[key]
 
@@ -148,14 +110,7 @@ def unpack_npz_to_png(npz_file, output_dir):
 
         if key == "image" and len(array.shape) == 3:  # RPM question layout for "image" key
             print(f"Processing RPM question image: {key}")
-            rpm_path = os.path.join(output_dir, f"{output_img_fname}.png")
-            save_rpm_question_image(array, rpm_path)
-        elif len(array.shape) == 2:  # Directly save 2D arrays (grayscale images)
-            save_image_from_array(array, os.path.join(output_dir, f"{key}.png"))
-        elif len(array.shape) == 3:  # Save individual slices for other keys
-            for i in range(array.shape[0]):
-                slice_path = os.path.join(output_dir, f"{key}_slice_{i}.png")
-                save_image_from_array(array[i], slice_path)
+            save_rpm_question_image(array, output_path)
         else:
             print(f"Skipping key '{key}': Invalid array shape {array.shape}")
 
@@ -173,10 +128,17 @@ def process_npz_files_in_directory(input_dir, output_dir):
         for file in files:
             if file.endswith(".npz"):
                 npz_path = os.path.join(root, file)
-                relative_path = os.path.relpath(root, input_dir)
-                output_subdir = os.path.join(output_dir, relative_path)
                 print(f"\n\nProcessing: {npz_path}")
-                unpack_npz_to_png(npz_path, output_subdir)
+                npz_path_split = npz_path.split("/")
+                print(f"npz_path_split: {npz_path_split}")
+                config = npz_path_split[-3] + "_" + npz_path_split[-2]
+                fname = npz_path_split[-1].split(".")[0]
+                output_path = os.path.join(output_dir, f"{config}_{fname}.png")
+                if os.path.isdir(output_path):
+                    print(f"Error: '{output_path}' is a directory, not a file path!")
+
+                print(f"Output path: {output_path}")
+                unpack_npz_to_png(npz_path, output_path)
 
 
 # Example usage
