@@ -87,6 +87,17 @@ def save_rpm_question_image(array, output_path):
     except Exception as e:
         print(f"Error saving RPM question image at {output_path}: {e}")
 
+def save_answer_file(output_file: str, prediction: str):
+    """
+    Save the prediction to a text file.
+    
+    Parameters:
+        output_file (str): Path to save the prediction.
+        prediction (str): Predicted answer.
+    """
+    with open(output_file, "w") as f:
+        f.write(prediction)
+    print(f"Saved prediction to: {output_file}")
 
 def unpack_npz_to_png(npz_file, output_path):
     """
@@ -101,8 +112,14 @@ def unpack_npz_to_png(npz_file, output_path):
     for key in data.files:
         array = data[key]
 
+        answers = ["A", "B", "C", "D", "E", "F", "G", "H"]
         # Skip scalars or invalid shapes
         if array.shape == ():
+            if key == "predict":
+                path_split = output_path.split(".")
+                path = ".." + path_split[2] + ".txt"
+                print(f"Saving prediction to: {path}")
+                save_answer_file(path, answers[array])
             print(f"Skipping key '{key}': Scalar value")
             print(f"Value: {array}")
             continue
