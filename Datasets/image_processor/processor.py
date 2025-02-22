@@ -159,6 +159,6 @@ def process_npz_files_in_directory(input_dir, output_dir):
 
 
 # Example usage
-input_directory = "../3_comp/input_data/"
-output_directory = "../3_comp/output_data/" 
+input_directory = "../4_comp/input_data/"
+output_directory = "../4_comp/output_data/" 
 process_npz_files_in_directory(input_directory, output_directory)
