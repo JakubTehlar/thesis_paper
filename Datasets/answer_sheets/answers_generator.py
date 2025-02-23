@@ -6,12 +6,12 @@ import os
 # The answers will be saved in "../data/answers/3_comp/answers.csv" and "../data/answers/answers.csv"
 
 # the answer csv file has the following structure:
-# index, image_path, question, answer, A, B, C, D, E, F, G, H 
+# index, image_path, question, answer, type, A, B, C, D, E, F, G, H 
 
 def save_csv(data, filename):
     with open(filename, mode='w') as file:
         writer = csv.writer(file)
-        writer.writerow(["index", "image_path", "question", "answer", "A", "B", "C", "D", "E", "F", "G", "H"])
+        writer.writerow(["index", "image_path", "question", "answer", 0, "A", "B", "C", "D", "E", "F", "G", "H"])
         for row in data:
             writer.writerow(row)
 
@@ -39,10 +39,10 @@ def create_data(images_path_local: str, answers_path_local: str, destination_pat
     return data
 
 if __name__ == "__main__":
-    local_images_path = "../4_comp/output_data/"
-    local_answers_path = "../4_comp/output_data/answers/"
-    destination_path_images = "data/4_comp"
-    local_answer_sheet_path = "answers/4_comp/answers.csv"
+    local_images_path = "../3_comp/output_data/"
+    local_answers_path = "../3_comp/output_data/answers/"
+    destination_path_images = "data/3_comp"
+    local_answer_sheet_path = "answers/3_comp/answers.csv"
     answers = create_data(local_images_path, local_answers_path, destination_path_images)
     save_csv(answers, local_answer_sheet_path)
     print("Answers saved to: ", local_answer_sheet_path) 
