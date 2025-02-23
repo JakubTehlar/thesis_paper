@@ -1,9 +1,12 @@
 import csv
 import os
 
+# "ml-rpm-bech/src/main.py"
+# "ml-rpm-bench/data/"
+
 # "." is the directory where the main.py is located and will be run from on RCI cluster
 # RPM images will be saved in "../data/3_comp" and "../data/4_comp"
-# The answers will be saved in "../data/answers/3_comp/answers.csv" and "../data/answers/answers.csv"
+# The answers will be saved in "../data/answers/3_comp/answers.csv" and "../data/answers/4_comp/answers.csv"
 
 # the answer csv file has the following structure:
 # index, image_path, question, answer, type, A, B, C, D, E, F, G, H 
@@ -11,7 +14,7 @@ import os
 def save_csv(data, filename):
     with open(filename, mode='w') as file:
         writer = csv.writer(file)
-        writer.writerow(["index", "image_path", "question", "answer", 0, "A", "B", "C", "D", "E", "F", "G", "H"])
+        writer.writerow(["index", "image_path", "question", "answer", "type", "A", "B", "C", "D", "E", "F", "G", "H"])
         for row in data:
             writer.writerow(row)
 
@@ -34,15 +37,15 @@ def create_data(images_path_local: str, answers_path_local: str, destination_pat
             # print("Answer path: ", answer_path + " Answer: " + answer)
 
             final_image_path = os.path.join(destination_path_images, question + ".png")
-            data.append([index, final_image_path, "holder", answer, "A", "B", "C", "D", "E", "F", "G", "H"])
+            data.append([index, final_image_path, "holder", answer,0, "A", "B", "C", "D", "E", "F", "G", "H"])
             index += 1
     return data
 
 if __name__ == "__main__":
-    local_images_path = "../3_comp/output_data/"
-    local_answers_path = "../3_comp/output_data/answers/"
-    destination_path_images = "data/3_comp"
-    local_answer_sheet_path = "answers/3_comp/answers.csv"
+    local_images_path = "../4_comp/output_data/"
+    local_answers_path = "../4_comp/output_data/answers/"
+    destination_path_images = "data/4_comp"
+    local_answer_sheet_path = "answers/4_comp/answers.csv"
     answers = create_data(local_images_path, local_answers_path, destination_path_images)
     save_csv(answers, local_answer_sheet_path)
     print("Answers saved to: ", local_answer_sheet_path) 
