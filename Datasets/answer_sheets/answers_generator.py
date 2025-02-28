@@ -11,6 +11,8 @@ import os
 # the answer csv file has the following structure:
 # index, image_path, question, answer, type, A, B, C, D, E, F, G, H 
 
+configs = ["oa_os_oc", "oa_os_nc", "oa_ns_oc", "oa_ns_nc", "na_os_oc", "na_os_nc", "na_ns_oc", "na_ns_nc"]
+
 def save_csv(data, filename):
     with open(filename, mode='w') as file:
         writer = csv.writer(file)
@@ -18,7 +20,7 @@ def save_csv(data, filename):
         for row in data:
             writer.writerow(row)
 
-def create_data(images_path_local: str, answers_path_local: str, destination_path_images: str):
+def create_data(images_path_local: str, answers_path_local: str, destination_path_images: str, config: str):
     # need to go through every .png file in the images_path_local directory
     # then, based on the "filename.png", we need to find the corresponding answer in the answers_path_local
     # as the answer will be saved under "answers/filename.txt" and containing the correct answer
@@ -27,14 +29,16 @@ def create_data(images_path_local: str, answers_path_local: str, destination_pat
     index = 0
     for filename in os.listdir(images_path_local):
         if filename.endswith(".png"):
-            image_path = os.path.join(destination_path_images, filename)
             question = filename.split(".")[0]
+            if (question.startswith(config) == False):
+                continue
+            image_path = os.path.join(destination_path_images, filename)
             answer_path = os.path.join(answers_path_local, question + ".txt")
-            # print("Image path: ", image_path)
-            # print("Question: ", question)
+            print("Image path: ", image_path)
+            print("Question: ", question)
             with open(answer_path, "r") as file:
                 answer = file.read().replace("\n", "")
-            # print("Answer path: ", answer_path + " Answer: " + answer)
+            print("Answer path: ", answer_path + " Answer: " + answer)
 
             final_image_path = os.path.join(destination_path_images, question + ".png")
             data.append([index, final_image_path, "holder", answer,0, "A", "B", "C", "D", "E", "F", "G", "H"])
@@ -42,10 +46,25 @@ def create_data(images_path_local: str, answers_path_local: str, destination_pat
     return data
 
 if __name__ == "__main__":
-    local_images_path = "../4_comp/output_data/"
-    local_answers_path = "../4_comp/output_data/answers/"
-    destination_path_images = "data/4_comp"
-    local_answer_sheet_path = "answers/4_comp/answers.csv"
-    answers = create_data(local_images_path, local_answers_path, destination_path_images)
-    save_csv(answers, local_answer_sheet_path)
-    print("Answers saved to: ", local_answer_sheet_path) 
+    local_dataset_path = "../3_comp/output_data/"
+    local_answers_path = "../3_comp/output_data/answers/"
+    destination_path_images = "data/3_comp"
+    local_answer_sheet_path = "answers/3_comp/answers.csv"
+    save_answers_path = "data/3_comp/"
+
+    # create directories if they don't exist
+    for config in configs:
+        path = os.path.join(destination_path_images, config)
+        if not os.path.exists(path):
+            os.makedirs(path)
+    # create the answers
+        answers = create_data(local_dataset_path, local_answers_path, destination_path_images, config)
+        
+        save_path = os.path.join(save_answers_path, config, config + "_answers.csv")
+        
+
+        # create the file if it doesn't exist
+
+        print("Saving answers to: ", save_path)
+        save_csv(answers, save_path)
+
