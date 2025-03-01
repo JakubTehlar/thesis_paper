@@ -87,14 +87,16 @@ if __name__ == "__main__":
     base_img_path = "../Datasets/3_comp/output_data/"
 
     data = load_csv(data_file_path + f"{DATASET_TYPE}/{CONFIG}/{CONFIG}_answers.csv") 
-    len_data = len(data) - 1 # -1 to exclude the header
+    len_data = len(data) - 1 # The first row is the header
     print(f"Loaded {len_data} items from the data sheet.")
     assert len_data > 0, "No data loaded from the data sheet."
-    assert data[-1][0] == len_data, "The number of items in the data sheet does not match the last index."
+    
+    # +1 as the index starts from 0
+    assert int(data[-1][0]) + 1 == len_data, f"The number of items in the data sheet does not match the last index. Expected {len_data}, got {data[-1][0]}."
 
     for item in data:
         print(item)
-    ##############################################################################################################
+    ############################################################################################################
     # Mistral API
     ##############################################################################################################
     client = Mistral(api_key=ARGS.api_key)
@@ -103,10 +105,14 @@ if __name__ == "__main__":
     # Prepare the messages
     ##############################################################################################################
     messages = []
-    for item in data:
+    for i in range(1, len_data):
+        item = data[i]
         id = item[0]
-        img_path = item[1]
-        correct_answer = item[3]
+        img_path = f"../{item[1]}"
+        correct_answer = item[2]
+
+        # Debugging
+        # print(f"ID: {id}, Image path: {img_path}, Correct answer: {correct_answer}")
 
         base64_image = encode_image(img_path)
         messages.append(
@@ -124,20 +130,40 @@ if __name__ == "__main__":
                 ]
             }
         )
+    
+    # for message in messages[0:1]:
+    #     print(message)
 
     ##############################################################################################################
     # Generate the answers; run the model
     ##############################################################################################################
     responses = []
+    
     for message in messages:
         chat_response = client.chat.complete(
             model=ARGS.model,
             messages=[message]
         )
         responses.append(chat_response.choices[0].message.content)
+    
+    
+    results_data = []
+    for i in range(1, len_data):
+        item = data[i]
+        response = responses[i - 1]
+
+        idx = item[0]
+        img_path = item[1]
+        correct_answer = item[2]
+        prediction = response.split("The correct answer is: ")[1]
+        correct = "True" if prediction == correct_answer else "False"
+        results_data.append([idx, img_path, correct_answer, prediction, correct])
+        results_data.append(response)
+    save_results(results_data, OUTPUT_PATH + f"{CONFIG}_results.csv")
 
     ##############################################################################################################
     # Save the answers
     ##############################################################################################################
+
 
     
