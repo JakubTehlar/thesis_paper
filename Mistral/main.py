@@ -44,6 +44,14 @@ if __name__ == "__main__":
     assert DATASET_TYPE in dataset_types, f"Invalid dataset type: '{DATASET_TYPE}'."
     assert OUTPUT_PATH is not None, "Output path not specified."
 
+    print("Running the experiments with the following configurations:")
+    print(f"Dataset type: {DATASET_TYPE}")
+    print(f"Configuration: {CONFIG}")
+    print(f"Output path: {OUTPUT_PATH}")
+    print(f"Model: {MODEL}")
+    print(f"Number of runs: {NUM_RUNS}")
+    print("")
+
     ############################################################################################################
     # Mistral API
     ##############################################################################################################
