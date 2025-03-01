@@ -28,7 +28,7 @@ def save_results(data, file_path):
     try:
         with open(file_path, mode='w', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow(["index", "image_path", "answer", "prediction", "correct"])
+            writer.writerow(["index", "image_path", "correct_answer", "prediction", "correct", "answer"])
             writer.writerows(data)
         print(f"Results saved to {file_path}")
     except Exception as e:  # Added general exception handling

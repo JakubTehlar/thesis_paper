@@ -51,8 +51,6 @@ if __name__ == "__main__":
     # +1 as the index starts from 0
     assert int(data[-1][0]) + 1 == len_data, f"The number of items in the data sheet does not match the last index. Expected {len_data}, got {data[-1][0]}."
 
-    for item in data:
-        print(item)
     ############################################################################################################
     # Mistral API
     ##############################################################################################################
@@ -117,8 +115,8 @@ if __name__ == "__main__":
         correct_answer = item[2]
         prediction = response.split("The correct answer is: ")[1]
         correct = "True" if prediction == correct_answer else "False"
-        results_data.append([idx, img_path, correct_answer, prediction, correct])
-        results_data.append(response)
+        # "index", "image_path", "correct_answer", "prediction", "correct", "answer"
+        results_data.append([idx, img_path, correct_answer, prediction, correct, response])
     save_results(results_data, OUTPUT_PATH + f"{CONFIG}_results.csv")
 
 
