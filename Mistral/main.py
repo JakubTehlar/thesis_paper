@@ -74,6 +74,7 @@ if __name__ == "__main__":
     # +1 as the index starts from 0
     assert int(data[-1][0]) + 1 == len_data, f"The number of items in the data sheet does not match the last index. Expected {len_data}, got {data[-1][0]}."
 
+
     ##############################################################################################################
     # Prepare the messages
     ##############################################################################################################
@@ -125,7 +126,10 @@ if __name__ == "__main__":
     # Save the answers
     ##############################################################################################################
     print("Saving the results.")
-    os.makedirs(OUTPUT_PATH, exist_ok=True)
+
+    FINAL_PATH = os.path.join(OUTPUT_PATH, CONFIG)
+    os.makedirs(FINAL_PATH, exist_ok=True)
+
     for r in range(NUM_RUNS):
         results_data = []
         for i in range(1, len_data):
@@ -139,7 +143,7 @@ if __name__ == "__main__":
             correct = "True" if prediction == correct_answer else "False"
             # "index", "image_path", "correct_answer", "prediction", "correct", "answer"
             results_data.append([idx, img_path, correct_answer, prediction, correct, response])
-        save_results(results_data, OUTPUT_PATH + f"{CONFIG}_run_{r+1}_results.csv")
+        save_results(results_data, FINAL_PATH + f"_run_{r+1}_results.csv")
 
 
     
