@@ -158,7 +158,6 @@ def process_npz_files_in_directory(input_dir, output_dir):
                 unpack_npz_to_png(npz_path, output_path)
 
 
-# Example usage
 input_directory = "../4_comp/input_data/"
 output_directory = "../4_comp/output_data/" 
 process_npz_files_in_directory(input_directory, output_directory)
