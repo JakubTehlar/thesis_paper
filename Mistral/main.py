@@ -87,10 +87,13 @@ if __name__ == "__main__":
     base_img_path = "../Datasets/3_comp/output_data/"
 
     data = load_csv(data_file_path + f"{DATASET_TYPE}/{CONFIG}/{CONFIG}_answers.csv") 
+    len_data = len(data) - 1 # -1 to exclude the header
+    print(f"Loaded {len_data} items from the data sheet.")
+    assert len_data > 0, "No data loaded from the data sheet."
+    assert data[-1][0] == len_data, "The number of items in the data sheet does not match the last index."
+
     for item in data:
         print(item)
-    
-
     ##############################################################################################################
     # Mistral API
     ##############################################################################################################
@@ -125,6 +128,13 @@ if __name__ == "__main__":
     ##############################################################################################################
     # Generate the answers; run the model
     ##############################################################################################################
+    responses = []
+    for message in messages:
+        chat_response = client.chat.complete(
+            model=ARGS.model,
+            messages=[message]
+        )
+        responses.append(chat_response.choices[0].message.content)
 
     ##############################################################################################################
     # Save the answers
