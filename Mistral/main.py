@@ -8,50 +8,7 @@ import argparse
 API_KEY="U3g8x7dBaIlNdoLnfgI81jyvtHLYZZCW"
 DEFAULT_MODEL="pixtral-12b-2409"
 
-
-# Path to your image
-img_name = "oa_os_oc_center_single_RAVEN_9918_test.png"
-image_path = "../Datasets/3_comp/output_data/" + img_name
-
-# Getting the base64 string
-base64_image = encode_image(image_path)
-
-# Retrieve the API key from environment variables
-api_key = os.environ["MISTRAL_API_KEY"] if "MISTRAL_API_KEY" in os.environ else API_KEY
-
-# Specify model
-model = "pixtral-12b-2409"
-
-# Initialize the Mistral client
-client = Mistral(api_key=api_key)
-
 task_prompt: str = "The image displays an intelligence test question featuring a 3x3 grid with nine boxes, one of which is empty and marked with a question mark (?). Your task is to select the correct shape from six options (labeled A to F) to fill the empty box, completing the pattern that links all the shapes together. You must first give your explanation and then provide your answer at the end of your response in the format: 'The correct answer is: _'."
-
-# Define the messages for the chat
-# messages = [
-#     {
-#         "role": "user",
-#         "content": [
-#             {
-#                 "type": "text",
-#                 "text": task_prompt
-#             },
-#             {
-#                 "type": "image_url",
-#                 "image_url": f"data:image/jpeg;base64,{base64_image}" 
-#             }
-#         ]
-#     }
-# ]
-
-# # Get the chat response
-# chat_response = client.chat.complete(
-#     model=model,
-#     messages=messages
-# )
-
-# # Print the content of the response
-# print(chat_response.choices[0].message.content)
 
 
 if __name__ == "__main__":
@@ -146,7 +103,10 @@ if __name__ == "__main__":
         )
         responses.append(chat_response.choices[0].message.content)
     
-    
+
+    ##############################################################################################################
+    # Save the answers
+    ##############################################################################################################
     results_data = []
     for i in range(1, len_data):
         item = data[i]
@@ -160,10 +120,6 @@ if __name__ == "__main__":
         results_data.append([idx, img_path, correct_answer, prediction, correct])
         results_data.append(response)
     save_results(results_data, OUTPUT_PATH + f"{CONFIG}_results.csv")
-
-    ##############################################################################################################
-    # Save the answers
-    ##############################################################################################################
 
 
     
