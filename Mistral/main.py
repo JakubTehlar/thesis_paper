@@ -22,11 +22,14 @@ if __name__ == "__main__":
     parser.add_argument("--output_path", type=str, help="The path to save the output data. Example: --output_path output/3_comp", required=True)
     parser.add_argument("--api_key", type=str, help="The API key for the Mistral API.", required=False, default=API_KEY)
     parser.add_argument("--model", type=str, help=f"The model to be used for the Mistral API. The default model is set to {DEFAULT_MODEL}", required=False, default=DEFAULT_MODEL)
+    parser.add_argument("--num_runs", type=int, help="The number of runs to be executed.", required=False, default=3)
 
     ARGS = parser.parse_args()
     CONFIG = ARGS.config
     DATASET_TYPE = ARGS.dataset_type
     OUTPUT_PATH = ARGS.output_path
+    MODEL = ARGS.model
+    NUM_RUNS = ARGS.num_runs
 
     configs = ["na_ns_nc", "na_ns_oc", "na_os_nc", "na_os_oc", "oa_ns_nc", "oa_ns_oc", "oa_os_nc", "oa_os_oc"]
     dataset_types = ["3_comp", "4_comp"]
@@ -93,31 +96,35 @@ if __name__ == "__main__":
     # Generate the answers; run the model
     ##############################################################################################################
     responses = []
-    
-    for message in messages:
-        chat_response = client.chat.complete(
-            model=ARGS.model,
-            messages=[message]
-        )
-        responses.append(chat_response.choices[0].message.content)
+    for i in range(NUM_RUNS):
+        print(f"Run {i + 1}/{NUM_RUNS}") 
+        run_responses = []
+        for message in messages:
+            chat_response = client.chat.complete(
+                model=ARGS.model,
+                messages=[message]
+            )
+            run_responses.append(chat_response.choices[0].message.content)
+        responses.append(run_responses)
     
 
     ##############################################################################################################
     # Save the answers
     ##############################################################################################################
     results_data = []
-    for i in range(1, len_data):
-        item = data[i]
-        response = responses[i - 1]
+    for r in range(NUM_RUNS):
+        for i in range(1, len_data):
+            item = data[i]
+            response = responses[r][i - 1]
 
-        idx = item[0]
-        img_path = item[1]
-        correct_answer = item[2]
-        prediction = response.split("The correct answer is: ")[1]
-        correct = "True" if prediction == correct_answer else "False"
-        # "index", "image_path", "correct_answer", "prediction", "correct", "answer"
-        results_data.append([idx, img_path, correct_answer, prediction, correct, response])
-    save_results(results_data, OUTPUT_PATH + f"{CONFIG}_results.csv")
+            idx = item[0]
+            img_path = item[1]
+            correct_answer = item[2]
+            prediction = response.split("The correct answer is: ")[1]
+            correct = "True" if prediction == correct_answer else "False"
+            # "index", "image_path", "correct_answer", "prediction", "correct", "answer"
+            results_data.append([idx, img_path, correct_answer, prediction, correct, response])
+        save_results(results_data, OUTPUT_PATH + f"{CONFIG}_run_{r+1}_results.csv")
 
 
     
