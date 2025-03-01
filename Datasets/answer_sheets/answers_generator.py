@@ -34,23 +34,24 @@ def create_data(images_path_local: str, answers_path_local: str, destination_pat
                 continue
             image_path = os.path.join(destination_path_images, filename)
             answer_path = os.path.join(answers_path_local, question + ".txt")
-            print("Image path: ", image_path)
-            print("Question: ", question)
+            # print("Image path: ", image_path)
+            # print("Question: ", question)
             with open(answer_path, "r") as file:
                 answer = file.read().replace("\n", "")
-            print("Answer path: ", answer_path + " Answer: " + answer)
+            # print("Answer path: ", answer_path + " Answer: " + answer)
 
             final_image_path = os.path.join(destination_path_images, question + ".png")
-            data.append([index, final_image_path, "holder", answer,0, "A", "B", "C", "D", "E", "F", "G", "H"])
+            data.append([index, final_image_path, answer]) 
             index += 1
     return data
 
 if __name__ == "__main__":
-    local_dataset_path = "../3_comp/output_data/"
-    local_answers_path = "../3_comp/output_data/answers/"
-    destination_path_images = "data/3_comp"
-    local_answer_sheet_path = "answers/3_comp/answers.csv"
-    save_answers_path = "data/3_comp/"
+    DATASET_TYPE = "4_comp"
+    local_dataset_path = f"../{DATASET_TYPE}/output_data/"
+    local_answers_path = f"../{DATASET_TYPE}/output_data/answers/"
+    destination_path_images = f"Dataset/{DATASET_TYPE}/output_data"
+    local_answer_sheet_path = f"answers/{DATASET_TYPE}/answers.csv"
+    save_answers_path = f"data/{DATASET_TYPE}/"
 
     # create directories if they don't exist
     for config in configs:
