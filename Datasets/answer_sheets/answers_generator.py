@@ -16,7 +16,7 @@ configs = ["oa_os_oc", "oa_os_nc", "oa_ns_oc", "oa_ns_nc", "na_os_oc", "na_os_nc
 def save_csv(data, filename):
     with open(filename, mode='w') as file:
         writer = csv.writer(file)
-        writer.writerow(["index", "image_path", "question", "answer", "type", "A", "B", "C", "D", "E", "F", "G", "H"])
+        writer.writerow(["index", "image_path", "answer"]) 
         for row in data:
             writer.writerow(row)
 
@@ -46,7 +46,7 @@ def create_data(images_path_local: str, answers_path_local: str, destination_pat
     return data
 
 if __name__ == "__main__":
-    DATASET_TYPE = "4_comp"
+    DATASET_TYPE = "3_comp"
     local_dataset_path = f"../{DATASET_TYPE}/output_data/"
     local_answers_path = f"../{DATASET_TYPE}/output_data/answers/"
     destination_path_images = f"Dataset/{DATASET_TYPE}/output_data"
