@@ -46,10 +46,10 @@ def create_data(images_path_local: str, answers_path_local: str, destination_pat
     return data
 
 if __name__ == "__main__":
-    DATASET_TYPE = "3_comp"
+    DATASET_TYPE = "4_comp"
     local_dataset_path = f"../{DATASET_TYPE}/output_data/"
     local_answers_path = f"../{DATASET_TYPE}/output_data/answers/"
-    destination_path_images = f"Dataset/{DATASET_TYPE}/output_data"
+    destination_path_images = f"Datasets/{DATASET_TYPE}/output_data"
     local_answer_sheet_path = f"answers/{DATASET_TYPE}/answers.csv"
     save_answers_path = f"data/{DATASET_TYPE}/"
 
