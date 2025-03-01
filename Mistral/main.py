@@ -5,13 +5,17 @@ from mistralai import Mistral
 from utils import *
 import argparse
 
-API_KEY="U3g8x7dBaIlNdoLnfgI81jyvtHLYZZCW"
+API_KEY_PATH="../../mistral_api_key.txt"
+API_KEY=""
 DEFAULT_MODEL="pixtral-12b-2409"
 
 task_prompt: str = "The image displays an intelligence test question featuring a 3x3 grid with nine boxes, one of which is empty and marked with a question mark (?). Your task is to select the correct shape from six options (labeled A to F) to fill the empty box, completing the pattern that links all the shapes together. You must first give your explanation and then provide your answer at the end of your response in the format: 'The correct answer is: _'."
 
 
 if __name__ == "__main__":
+    with open(API_KEY_PATH, "r") as file:
+        API_KEY = file.read
+    
     ##############################################################################################################
     # Parse the arguments
     ##############################################################################################################
