@@ -147,7 +147,11 @@ if __name__ == "__main__":
             idx = item[0]
             img_path = item[1]
             correct_answer = item[2]
-            prediction = response.split("The correct answer is: ")[1]
+            try:
+                prediction = response.split("The correct answer is: ")[1]
+            except:
+                prediction = "-"
+                print(f"Error: Could not extract the answer from the response: {response}")
             correct = "True" if prediction == correct_answer else "False"
             # "index", "image_path", "correct_answer", "prediction", "correct", "answer"
             results_data.append([idx, img_path, correct_answer, prediction, correct, response])
