@@ -153,5 +153,7 @@ if __name__ == "__main__":
             results_data.append([idx, img_path, correct_answer, prediction, correct, response])
         save_results(results_data, FINAL_PATH + f"_run_{r+1}_results.csv")
 
+    print(f"Experiment completed. Results saved to {FINAL_PATH}.")
+    print()
 
     

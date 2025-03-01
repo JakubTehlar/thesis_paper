@@ -30,7 +30,7 @@ def save_results(data, file_path):
             writer = csv.writer(file)
             writer.writerow(["index", "image_path", "correct_answer", "prediction", "correct", "answer"])
             writer.writerows(data)
-        print(f"Results saved to {file_path}")
+        # print(f"Results saved to {file_path}")
     except Exception as e:  # Added general exception handling
         print(f"Error: {e}")
 
