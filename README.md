@@ -6,7 +6,7 @@ This project runs a MistralAI model to evaluate its reasoning skills on I-RAVEN 
 ## Requirements
 - Python 3.8+
 - `requests` library (install using `pip install -r requirements.txt`)
-- MistralAI API key (store in `../../mistral_api_key.txt` or set as an environment variable `export MISTRAL_API_KEY='YOUR_KEY'`)
+- MistralAI API key (store in `../../mistral_api_key.txt` or set as an environment variable using ```sh export MISTRAL_API_KEY='YOUR_KEY' ```)
 
 ## Usage
 Run the script using the following command, using an `oa_os_oc` configuration of the `3_comp` dataset.
