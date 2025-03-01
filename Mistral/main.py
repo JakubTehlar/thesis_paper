@@ -106,13 +106,15 @@ if __name__ == "__main__":
             )
             run_responses.append(chat_response.choices[0].message.content)
         responses.append(run_responses)
+    print("Completed the runs.")
     
 
     ##############################################################################################################
     # Save the answers
     ##############################################################################################################
-    results_data = []
+    print("Saving the results.")
     for r in range(NUM_RUNS):
+        results_data = []
         for i in range(1, len_data):
             item = data[i]
             response = responses[r][i - 1]
