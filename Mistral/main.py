@@ -125,6 +125,7 @@ if __name__ == "__main__":
     # Save the answers
     ##############################################################################################################
     print("Saving the results.")
+    os.makedirs(OUTPUT_PATH, exist_ok=True)
     for r in range(NUM_RUNS):
         results_data = []
         for i in range(1, len_data):
