@@ -1,17 +1,8 @@
 import csv
 import os
 
-# "ml-rpm-bech/src/main.py"
-# "ml-rpm-bench/data/"
-
-# "." is the directory where the main.py is located and will be run from on RCI cluster
-# RPM images will be saved in "../data/3_comp" and "../data/4_comp"
-# The answers will be saved in "../data/answers/3_comp/answers.csv" and "../data/answers/4_comp/answers.csv"
-
-# the answer csv file has the following structure:
-# index, image_path, question, answer, type, A, B, C, D, E, F, G, H 
-
 configs = ["oa_os_oc", "oa_os_nc", "oa_ns_oc", "oa_ns_nc", "na_os_oc", "na_os_nc", "na_ns_oc", "na_ns_nc"]
+dataset_types = ["3_comp", "4_comp"]
 
 def save_csv(data, filename):
     with open(filename, mode='w') as file:
@@ -22,7 +13,7 @@ def save_csv(data, filename):
 
 def create_data(images_path_local: str, answers_path_local: str, destination_path_images: str, config: str):
     # need to go through every .png file in the images_path_local directory
-    # then, based on the "filename.png", we need to find the corresponding answer in the answers_path_local
+    # then, based on the "filename.png", we need to find the corresponding answer label in the answers_path_local
     # as the answer will be saved under "answers/filename.txt" and containing the correct answer
 
     data = []
@@ -47,10 +38,14 @@ def create_data(images_path_local: str, answers_path_local: str, destination_pat
 
 if __name__ == "__main__":
     DATASET_TYPE = "4_comp"
+    # local paths
     local_dataset_path = f"../{DATASET_TYPE}/output_data/"
     local_answers_path = f"../{DATASET_TYPE}/output_data/answers/"
-    destination_path_images = f"Datasets/{DATASET_TYPE}/output_data"
     local_answer_sheet_path = f"answers/{DATASET_TYPE}/answers.csv"
+    
+    # This path will be the image path in the answers.csv file
+    destination_path_images = f"Datasets/{DATASET_TYPE}/output_data"
+    # This path will be the path where the answers will be saved
     save_answers_path = f"data/{DATASET_TYPE}/"
 
     # create directories if they don't exist
@@ -58,9 +53,9 @@ if __name__ == "__main__":
         path = os.path.join(destination_path_images, config)
         if not os.path.exists(path):
             os.makedirs(path)
+
     # create the answers
         answers = create_data(local_dataset_path, local_answers_path, destination_path_images, config)
-        
         save_path = os.path.join(save_answers_path, config, config + "_answers.csv")
         
 
