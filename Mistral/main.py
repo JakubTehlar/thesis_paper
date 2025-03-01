@@ -9,7 +9,10 @@ from tqdm import tqdm
 
 API_KEY_PATH="../../mistral_api_key.txt"
 API_KEY=os.environ["MISTRAL_API_KEY"]
+MODELS_URL = "https://api.mistral.ai/v1/models"
 DEFAULT_MODEL="pixtral-12b-2409"
+FINE_TUNED_MODELS = []
+ALL_MODELS = [] + FINE_TUNED_MODELS
 
 task_prompt: str = "The image displays an intelligence test question featuring a 3x3 grid with nine boxes, one of which is empty and marked with a question mark (?). Your task is to select the correct shape from six options (labeled A to F) to fill the empty box, completing the pattern that links all the shapes together. You must first give your explanation and then provide your answer at the end of your response in the format: 'The correct answer is: _'."
 
@@ -37,9 +40,23 @@ if __name__ == "__main__":
     configs = ["na_ns_nc", "na_ns_oc", "na_os_nc", "na_os_oc", "oa_ns_nc", "oa_ns_oc", "oa_os_nc", "oa_os_oc"]
     dataset_types = ["3_comp", "4_comp"]
 
-    assert CONFIG in configs, f"Invalid configuration: {CONFIG}."
-    assert DATASET_TYPE in dataset_types, f"Invalid dataset type: {DATASET_TYPE}."
+    assert CONFIG in configs, f"Invalid configuration: '{CONFIG}'."
+    assert DATASET_TYPE in dataset_types, f"Invalid dataset type: '{DATASET_TYPE}'."
     assert OUTPUT_PATH is not None, "Output path not specified."
+
+    ############################################################################################################
+    # Mistral API
+    ##############################################################################################################
+    client = Mistral(api_key=ARGS.api_key)
+    
+    response = requests.get(MODELS_URL, headers = {"Authorization": f"Bearer {ARGS.api_key}"})
+    if response.status_code == 200:
+        models = response.json()
+        for model in models["data"]:
+            ALL_MODELS.append(model["id"])
+    else:
+        print(f"Failed to get the list of models. Status code: {response.status_code}")
+    assert ARGS.model in ALL_MODELS, f"Model '{ARGS.model}' not found in the list of models. If the model is a fine-tuned one, add it separately."# Available models: {ALL_MODELS}."
 
     ##############################################################################################################
     # Load the data sheet
@@ -56,11 +73,6 @@ if __name__ == "__main__":
     
     # +1 as the index starts from 0
     assert int(data[-1][0]) + 1 == len_data, f"The number of items in the data sheet does not match the last index. Expected {len_data}, got {data[-1][0]}."
-
-    ############################################################################################################
-    # Mistral API
-    ##############################################################################################################
-    client = Mistral(api_key=ARGS.api_key)
 
     ##############################################################################################################
     # Prepare the messages
@@ -92,9 +104,6 @@ if __name__ == "__main__":
             }
         )
     
-    # for message in messages[0:1]:
-    #     print(message)
-
     ##############################################################################################################
     # Generate the answers; run the model
     ##############################################################################################################
