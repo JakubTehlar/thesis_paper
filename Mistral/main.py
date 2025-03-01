@@ -4,18 +4,17 @@ import os
 from mistralai import Mistral
 from utils import *
 import argparse
+import time
+from tqdm import tqdm
 
 API_KEY_PATH="../../mistral_api_key.txt"
-API_KEY=""
+API_KEY=os.environ["MISTRAL_API_KEY"]
 DEFAULT_MODEL="pixtral-12b-2409"
 
 task_prompt: str = "The image displays an intelligence test question featuring a 3x3 grid with nine boxes, one of which is empty and marked with a question mark (?). Your task is to select the correct shape from six options (labeled A to F) to fill the empty box, completing the pattern that links all the shapes together. You must first give your explanation and then provide your answer at the end of your response in the format: 'The correct answer is: _'."
 
 
 if __name__ == "__main__":
-    with open(API_KEY_PATH, "r") as file:
-        API_KEY = file.read
-    
     ##############################################################################################################
     # Parse the arguments
     ##############################################################################################################
@@ -99,19 +98,19 @@ if __name__ == "__main__":
     ##############################################################################################################
     # Generate the answers; run the model
     ##############################################################################################################
+    print("Starting the runs.")
     responses = []
-    for i in range(NUM_RUNS):
-        print(f"Run {i + 1}/{NUM_RUNS}") 
+    for i in tqdm(range(NUM_RUNS), desc="Running experiments", unit="run"):
         run_responses = []
-        for message in messages:
+        for message in tqdm(messages, desc=f"   Run {i + 1}", unit="msg", leave=False):
             chat_response = client.chat.complete(
                 model=ARGS.model,
                 messages=[message]
             )
             run_responses.append(chat_response.choices[0].message.content)
         responses.append(run_responses)
+
     print("Completed the runs.")
-    
 
     ##############################################################################################################
     # Save the answers
