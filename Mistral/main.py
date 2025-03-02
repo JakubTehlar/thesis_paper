@@ -120,7 +120,7 @@ if __name__ == "__main__":
     responses = []
     for i in tqdm(range(NUM_RUNS), desc="Running experiments", unit="run"):
         run_responses = []
-        for message in tqdm(messages, desc=f"   Run {i + 1}", unit="msg", leave=False):
+        for message in tqdm(messages, desc=f"   Run {i + 1}/{NUM_RUNS}", unit="msg", leave=False):
             chat_response = client.chat.complete(
                 model=ARGS.model,
                 messages=[message]
