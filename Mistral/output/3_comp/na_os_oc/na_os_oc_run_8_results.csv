@@ -1,0 +1,446 @@
+index,image_path,correct_answer,prediction,correct,answer
+0,Datasets/3_comp/output_data/na_os_oc_up_center_single_down_center_single_RAVEN_9999_test.png,C,F,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
+
+### Row 1:
+- Shape 1: Dark circle
+- Shape 2: Dark pentagon
+- Shape 3: Dark triangle
+
+### Row 2:
+- Shape 1: Light pentagon
+- Shape 2: Light pentagon
+- Shape 3: Light circle
+
+### Row 3:
+- Shape 1: Light square
+- Shape 2: Light pentagon
+- Shape 3: Light hexagon
+
+### Empty Box:
+- The empty box is in the third row, third column.
+
+### Options:
+- A: Light circle
+- B: Light circle
+- C: Light square
+- D: Light diamond
+- E: Dark circle
+- F: Light diamond
+
+### Analysis:
+1. **Shape Type:**
+   - The shapes in the third row are light-colored.
+   - The shapes in the third column are squares, pentagons, and hexagons.
+
+2. **Shape Specificity:**
+   - The third row has a light square, light pentagon, and light hexagon.
+   - The third column has a light square, light pentagon, and light hexagon.
+
+Given these observations, the correct shape should be a light-colored shape that fits the pattern of the third row and the third column. The light hexagon (option F) fits this pattern.
+
+### Conclusion:
+The correct answer is: F"
+1,Datasets/3_comp/output_data/na_os_oc_distribute_four_RAVEN_9770_train.png,F,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes and their arrangement:
+
+1. **Identify the shapes in the grid:**
+   - The grid contains circles, triangles, and pentagons.
+   - The shapes are arranged in a specific order, and we need to determine the rule governing this order.
+
+2. **Analyze the pattern:**
+   - The top row has three shapes: a triangle, a pentagon, and a circle.
+   - The middle row has a triangle, a pentagon, and a circle.
+   - The bottom row has a triangle, a pentagon, and a circle.
+
+3. **Determine the pattern:**
+   - The shapes alternate between a triangle, a pentagon, and a circle.
+   - The pattern repeats every row.
+
+4. **Identify the empty box:**
+   - The empty box is in the bottom row, third position.
+
+5. **Determine the correct shape for the empty box:**
+   - Following the pattern, the third position in the bottom row should be a circle.
+
+Therefore, the correct answer is a circle.
+
+The correct answer is: C"
+2,Datasets/3_comp/output_data/na_os_oc_in_center_single_out_center_single_RAVEN_9991_train.png,C,**C**.,False,"To solve this intelligence test question, we need to analyze the patterns in the shapes and their positions within the grid. Let's break down the elements:
+
+1. **Shape Analysis**:
+   - The shapes in the grid include pentagons, circles, and triangles.
+   - Each shape contains a smaller shape or symbol inside it: a circle, a pentagon, or a triangle.
+
+2. **Position Analysis**:
+   - The shapes are arranged in a 3x3 grid.
+   - The top row has a pentagon, a pentagon, and a pentagon.
+   - The middle row has a circle, a circle, and a circle.
+   - The bottom row has a triangle, a triangle, and a cross mark.
+
+3. **Inner Shape Analysis**:
+   - The top row has a circle, a pentagon, and a triangle.
+   - The middle row has a small circle, a pentagon, and a triangle.
+   - The bottom row has a small circle, a pentagon, and a cross mark.
+
+4. **Pattern Identification**:
+   - The pattern seems to involve the outer shape and the inner shape.
+   - The empty box is in the bottom row, third column.
+
+5. **Matching the Pattern**:
+   - The bottom row has a triangle and a cross mark.
+   - The inner shapes in the bottom row are a small circle, a pentagon, and a cross mark.
+   - The empty box needs to follow this pattern.
+
+Given these observations, the correct shape to fill the empty box should have an outer triangle and an inner pentagon, as this matches the pattern seen in the other shapes.
+
+The correct answer is: **C**."
+3,Datasets/3_comp/output_data/na_os_oc_in_center_single_out_center_single_RAVEN_9918_test.png,F,B,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+
+1. Top row: Hexagon with triangle, Square with triangle, Circle with triangle
+2. Middle row: Circle with square, Hexagon with square, Square with square
+3. Bottom row: Diamond with circle, Circle with circle, Hexagon with circle, Cross
+
+First, let's identify the shapes in the empty box:
+- The shapes in the top row have a triangle inside.
+- The shapes in the middle row have a square inside.
+- The shapes in the bottom row have a circle inside.
+
+Next, let's look at the shapes themselves:
+- The shapes in the first column are a hexagon, circle, and diamond.
+- The shapes in the second column are a square, hexagon, and circle.
+- The shapes in the third column are a square, hexagon, and hexagon.
+
+Now, let's identify the pattern:
+- The first row has a consistent shape inside (triangle).
+- The second row has a consistent shape inside (square).
+- The third row has a consistent shape inside (circle).
+
+Given this, the pattern seems to be the shape inside the boxes. The empty box is in the third column, which has circles inside. Therefore, the correct shape to fill the empty box should have a circle inside.
+
+Looking at the options (A to F):
+- A: Hexagon with circle
+- B: Circle with circle
+- C: Hexagon with circle
+- D: Hexagon with circle
+- E: Hexagon with circle
+- F: Hexagon with circle
+
+The correct answer is the one with a circle inside, which is option B.
+
+The correct answer is: B"
+4,Datasets/3_comp/output_data/na_os_oc_up_center_single_down_center_single_RAVEN_9997_val.png,C,**D**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the grid row by row:
+
+1. **First Row:**
+   - Shapes: Hexagon (dark), Circle (light), Square (dark)
+   - Pattern: The shapes alternate between dark and light colors.
+
+2. **Second Row:**
+   - Shapes: Hexagon (light), Circle (dark), Square (light), Hexagon (dark), Circle (dark)
+   - Pattern: The shapes alternate between dark and light colors.
+
+3. **Third Row:**
+   - Shapes: Circle (light), Square (dark), Hexagon (dark), Circle (light)
+   - Pattern: The shapes alternate between dark and light colors.
+
+4. **Fourth Row (Empty Row):**
+   - Shapes: Circle (light), Square (dark), Hexagon (dark), Circle (light)
+   - Pattern: The shapes alternate between dark and light colors.
+
+Given the pattern of alternating dark and light shapes, we need to determine which shape fits in the empty box to maintain this pattern.
+
+- The first box in the fourth row is a Circle (light).
+- The second box in the fourth row is a Square (dark).
+- The third box in the fourth row is a Hexagon (dark).
+- The fourth box in the fourth row should be a Circle (light).
+
+Thus, the correct answer is a Circle (light).
+
+The correct answer is: **D**."
+5,Datasets/3_comp/output_data/na_os_oc_distribute_nine_RAVEN_9879_test.png,H,E,False,"To solve this puzzle, we need to analyze the pattern of the shapes in the grid. The shapes are arranged in a specific sequence that follows a logical progression. Let's break down the pattern:
+
+1. **Identify the shapes in the grid:**
+   - The top row has hexagons and squares.
+   - The middle row has squares and triangles.
+   - The bottom row has triangles.
+
+2. **Determine the progression of shapes:**
+   - From left to right in the top row, the shapes transition from hexagons to squares.
+   - In the middle row, the shapes transition from squares to triangles.
+   - In the bottom row, the shapes are all triangles.
+
+3. **Analyze the transition between rows:**
+   - The top row ends with a square.
+   - The middle row starts with a square and transitions to triangles.
+   - The bottom row is entirely triangles.
+
+4. **Identify the empty box:**
+   - The empty box is in the middle row, third column.
+
+5. **Determine the shape for the empty box:**
+   - Since the middle row transitions from squares to triangles and the empty box is in the third column, it should be a triangle.
+
+6. **Match the shape with the options:**
+   - Options A, B, C, and D are squares.
+   - Options E, F, G, and H are triangles.
+
+Given the progression and the need to complete the pattern, the correct shape for the empty box is a triangle.
+
+The correct answer is: E"
+6,Datasets/3_comp/output_data/na_os_oc_in_distribute_four_out_center_single_RAVEN_9491_train.png,C,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+
+1. Top row: 
+   - Box 1: Pentagon with a triangle and a square
+   - Box 2: Square with a triangle and a square
+   - Box 3: Hexagon with a triangle and a square
+
+2. Middle row:
+   - Box 4: Square with a diamond
+   - Box 5: Hexagon with a diamond
+   - Box 6: Pentagon with a diamond
+
+3. Bottom row:
+   - Box 7: Hexagon with a triangle
+   - Box 8: Pentagon with a triangle
+   - Box 9: Empty box with a question mark (?)
+
+Now, let's look at the options A to F:
+
+- A: Square with a diamond
+- B: Pentagon with a triangle and a square
+- C: Pentagon with a triangle
+- D: Pentagon with a diamond
+- E: Hexagon with a triangle
+- F: Square with a triangle
+
+To determine the correct answer, we need to identify the pattern. One possible pattern could be the shape of the box itself (square, pentagon, hexagon) and the type of figure inside (triangle, square, diamond).
+
+Observing the grid, we see:
+- The top row has shapes with a triangle and a square.
+- The middle row has shapes with a diamond.
+- The bottom row has shapes with a triangle.
+
+Given that the empty box is in the bottom row, the shape inside should be a triangle. The shape of the box itself alternates between pentagon and hexagon.
+
+Since the previous box (Box 8) is a pentagon with a triangle, the next box (Box 9) should be a hexagon with a triangle.
+
+Therefore, the correct answer is the hexagon with a triangle, which is option E.
+
+The correct answer is: E"
+7,Datasets/3_comp/output_data/na_os_oc_distribute_nine_RAVEN_9873_train.png,B,"F
+",False,"To solve this intelligence test question, we need to analyze the patterns in the shapes and their arrangement within the 3x3 grid. Here are the steps to determine the correct answer:
+
+1. **Identify the Shapes and Patterns**: 
+   - The top part of the image shows various shapes in different colors and shades.
+   - The bottom part of the image shows six groups of shapes labeled A to F.
+
+2. **Analyze the Grid**: 
+   - The 3x3 grid has eight shapes and one empty box (marked with a question mark).
+   - We need to determine the pattern that connects the shapes in the grid.
+
+3. **Determine the Pattern**:
+   - The shapes in the grid seem to follow a specific pattern based on their position and orientation.
+   - Observing the shapes, it appears that the pattern involves alternating between different shapes and their rotations.
+
+4. **Match the Pattern with the Options**:
+   - Group A: Hexagons in various shades.
+   - Group B: Hexagons and triangles in different shades.
+   - Group C: Hexagons and squares in different shades.
+   - Group D: Circles in different shades.
+   - Group E: Circles in different shades and sizes.
+   - Group F: Hexagons and triangles in different shades.
+
+5. **Identify the Correct Shape**:
+   - By examining the grid, we can see that the shapes alternate between hexagons and triangles.
+   - The empty box needs to be filled with a shape that continues this alternating pattern.
+
+6. **Conclusion**:
+   - The correct shape to fill the empty box is a triangle, as it continues the alternating pattern of hexagons and triangles.
+
+The correct answer is: F
+"
+8,Datasets/3_comp/output_data/na_os_oc_left_center_single_right_center_single_RAVEN_9970_train.png,G,"**A**
+
+**Final Answer:** ",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column.
+
+### Step-by-Step Analysis:
+
+1. **First Row:**
+   - Shapes: Hexagon, Hexagon, Hexagon, Triangle, Hexagon, Square, Hexagon
+   - Pattern: The first three shapes are hexagons, followed by a mix of different shapes.
+
+2. **Second Row:**
+   - Shapes: Hexagon, Diamond, Hexagon, Hexagon, Hexagon, Triangle, Hexagon
+   - Pattern: The first and last shapes are hexagons, with a mix of different shapes in between.
+
+3. **Third Row:**
+   - Shapes: Hexagon, Triangle, Hexagon, Square, Hexagon, Hexagon, Cross
+   - Pattern: The first and last shapes are hexagons, with a mix of different shapes in between.
+
+4. **First Column:**
+   - Shapes: Hexagon, Hexagon, Hexagon
+   - Pattern: All hexagons.
+
+5. **Second Column:**
+   - Shapes: Diamond, Triangle, Triangle
+   - Pattern: Alternating shapes.
+
+6. **Third Column:**
+   - Shapes: Hexagon, Hexagon, Square
+   - Pattern: Alternating shapes.
+
+7. **Fourth Column:**
+   - Shapes: Hexagon, Hexagon, Hexagon
+   - Pattern: All hexagons.
+
+8. **Fifth Column:**
+   - Shapes: Triangle, Hexagon, Hexagon
+   - Pattern: Alternating shapes.
+
+9. **Sixth Column:**
+   - Shapes: Hexagon, Hexagon, Hexagon
+   - Pattern: All hexagons.
+
+10. **Seventh Column:**
+    - Shapes: Hexagon, Hexagon, Hexagon
+    - Pattern: All hexagons.
+
+11. **Eighth Column:**
+    - Shapes: Hexagon, Hexagon, Hexagon
+    - Pattern: All hexagons.
+
+12. **Ninth Column:**
+    - Shapes: Hexagon, Hexagon, Hexagon
+    - Pattern: All hexagons.
+
+### Conclusion:
+The consistent pattern across the grid is that hexagons appear in every column. Therefore, the shape that should fill the empty box is a hexagon.
+
+The correct answer is: **A**
+
+**Final Answer:** The correct answer is: A"
+9,Datasets/3_comp/output_data/na_os_oc_distribute_four_RAVEN_9758_test.png,F,"B
+",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column:
+
+1. **First Row:**
+   - Shapes: Circle, Square, Triangle
+   - Pattern: The shapes are different (Circle, Square, Triangle).
+
+2. **Second Row:**
+   - Shapes: Circle, Square, Circle
+   - Pattern: The shapes alternate between Circle and Square.
+
+3. **Third Row:**
+   - Shapes: Circle, Triangle, Square
+   - Pattern: The shapes alternate between Circle and Triangle.
+
+4. **First Column:**
+   - Shapes: Circle, Circle, Circle
+   - Pattern: All shapes are Circles.
+
+5. **Second Column:**
+   - Shapes: Square, Square, Square
+   - Pattern: All shapes are Squares.
+
+6. **Third Column:**
+   - Shapes: Triangle, Triangle, Triangle
+   - Pattern: All shapes are Triangles.
+
+Given these patterns, we can infer that the empty box should follow the pattern of its row and column.
+
+- **Empty Box Location:** The empty box is in the third row and second column.
+- **Third Row Pattern:** Alternates between Circle and Triangle.
+- **Second Column Pattern:** All shapes are Squares.
+
+Since the empty box is in the third row and second column, it should be a Square to match the column pattern.
+
+The correct answer is: B
+"
+10,Datasets/3_comp/output_data/na_os_oc_center_single_RAVEN_9883_train.png,C,H.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+
+1. Top row: pentagon, pentagon, pentagon
+2. Middle row: pentagon, pentagon, circle
+3. Bottom row: circle, circle, X
+
+Next, let's look at the options provided:
+
+- A: Circle
+- B: Black triangle
+- C: Circle
+- D: Black circle
+- E: Black circle
+- F: White triangle
+- G: Black triangle
+- H: White triangle
+
+We need to determine which shape completes the pattern. Observing the grid, we see that the shapes alternate between pentagons and circles. The empty box is in the bottom row, which currently has two circles. Therefore, the pattern suggests that the next shape should be a pentagon.
+
+Among the options, the only pentagon is option H (white triangle). However, this does not fit the pattern of alternating between pentagons and circles. Therefore, we need to reconsider the pattern.
+
+Upon closer inspection, we notice that the shapes in the grid are alternating between filled and unfilled shapes. The top row has filled pentagons, the middle row has unfilled pentagons and circles, and the bottom row has unfilled circles and an X.
+
+Given this, the correct shape to fill the empty box should be an unfilled shape. The options that fit this criterion are A, C, F, and H. Since the pattern alternates between pentagons and circles, and the bottom row has two circles, the next shape should be a pentagon.
+
+Therefore, the correct answer is the unfilled pentagon, which is option H.
+
+The correct answer is: H."
+11,Datasets/3_comp/output_data/na_os_oc_in_distribute_four_out_center_single_RAVEN_9489_test.png,E,"**C**
+",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+
+1. Top row: Triangle with square, Pentagon with triangle, Circle with dot.
+2. Middle row: Triangle with dot, Pentagon with square, Circle with triangle.
+3. Bottom row: Triangle with triangle, Pentagon with dot, Circle with cross.
+
+The pattern seems to involve a sequence of shapes and symbols. Let's break it down:
+
+- The first column has a triangle with a square, a triangle with a dot, and a triangle with a triangle.
+- The second column has a pentagon with a triangle, a pentagon with a square, and a pentagon with a dot.
+- The third column has a circle with a dot, a circle with a triangle, and a circle with a cross.
+
+To find the correct answer, we need to look for a consistent pattern in the shapes and symbols. Observing the sequence, it appears that the shapes alternate between triangles, pentagons, and circles, and the symbols within the shapes also change in a specific order.
+
+Let's analyze the symbols:
+- Top row: Square, Triangle, Dot.
+- Middle row: Dot, Square, Triangle.
+- Bottom row: Triangle, Dot, Cross.
+
+The sequence of symbols seems to be: Square, Triangle, Dot, Dot, Square, Triangle, Triangle, Dot, Cross.
+
+Given this pattern, the empty box in the grid should have a circle with a square inside it, following the sequence.
+
+The correct answer is: **C**
+"
+12,Datasets/3_comp/output_data/na_os_oc_left_center_single_right_center_single_RAVEN_9979_test.png,E,"**F**
+",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
+
+### Top Row:
+- Shapes: Circle, Triangle, Circle, Triangle, Circle, Triangle
+- Observation: The shapes alternate between circles and triangles.
+
+### Middle Row:
+- Shapes: Pentagon, Small Square, Pentagon, Small Square, Pentagon, Small Square
+- Observation: The shapes alternate between pentagons and small squares.
+
+### Bottom Row:
+- Shapes: Hexagon, Small Pentagon, Hexagon, Small Pentagon, Hexagon, Small Pentagon
+- Observation: The shapes alternate between hexagons and small pentagons.
+
+### Pattern Analysis:
+- Top Row: Alternates between two shapes (Circle and Triangle).
+- Middle Row: Alternates between two shapes (Pentagon and Small Square).
+- Bottom Row: Alternates between two shapes (Hexagon and Small Pentagon).
+
+### Empty Box Location:
+The empty box is in the middle row, third column.
+
+### Options Analysis:
+- **A**: Hexagon, Small Pentagon
+- **B**: Hexagon, Small Pentagon
+- **C**: Hexagon, Small Pentagon
+- **D**: Hexagon, Small Pentagon
+- **E**: Hexagon, Small Pentagon
+- **F**: Hexagon, Small Pentagon
+
+Given the pattern of alternating shapes, the correct shape to fill the empty box should be a ""Small Pentagon"" to maintain the alternation with the previous shape (Hexagon).
+
+### Conclusion:
+The correct answer is: **F**
+"
