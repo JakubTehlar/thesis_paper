@@ -135,7 +135,7 @@ if __name__ == "__main__":
     ##############################################################################################################
     print("Saving the results.")
 
-    FINAL_PATH = os.path.join(OUTPUT_PATH, CONFIG)
+    FINAL_PATH = os.path.join(OUTPUT_PATH, MODEL ,CONFIG)
     os.makedirs(FINAL_PATH, exist_ok=True)
 
     for r in range(NUM_RUNS):
