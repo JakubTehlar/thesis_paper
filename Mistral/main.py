@@ -14,7 +14,15 @@ DEFAULT_MODEL="pixtral-12b-2409"
 FINE_TUNED_MODELS = []
 ALL_MODELS = [] + FINE_TUNED_MODELS
 
-task_prompt: str = "The image displays an intelligence test question featuring a 3x3 grid with nine boxes, one of which is empty and marked with a question mark (?). Your task is to select the correct shape from six options (labeled A to F) to fill the empty box, completing the pattern that links all the shapes together. You must first give your explanation and then provide your answer at the end of your response in the format: 'The correct answer is: _'."
+task_prompt: str = "The image displays an intelligence test question featuring a 3x3 grid with nine boxes, one of which is empty and marked with a question mark (?). Your task is to select the correct shape from six options (labeled A to H) to fill the empty box, completing the pattern that links all the shapes together. You must first give your explanation and then provide your answer at the end of your response in the format: 'The correct answer is: _'."
+
+
+mistral_prompt: str = "You are an IQ test solver. You are presented with an image of an IQ test question. The IQ test question is a\
+    3x3 grid with nine boxes. The bottom-right box is empty and marked with a symbol 'x'. Following the instructions, you are to\
+    deduce the pattern that links the shapes in the matrix and select the correct answer from the options provided under the matrix,\
+    separated by a thick horizontal line, labeled A to H.\
+    ### Instructions:\
+    #1.  " 
 
 
 if __name__ == "__main__":
