@@ -14,15 +14,26 @@ DEFAULT_MODEL="pixtral-12b-2409"
 FINE_TUNED_MODELS = []
 ALL_MODELS = [] + FINE_TUNED_MODELS
 
-task_prompt: str = "The image displays an intelligence test question featuring a 3x3 grid with nine boxes, one of which is empty and marked with a question mark (?). Your task is to select the correct shape from six options (labeled A to H) to fill the empty box, completing the pattern that links all the shapes together. You must first give your explanation and then provide your answer at the end of your response in the format: 'The correct answer is: _'."
+PROMPT="mistral_prompt"
 
+task_prompt: str = "The image displays an intelligence test question featuring a 3x3 grid with nine boxes, one of which is empty and marked with a question mark (?). Your task is to select the correct shape from six options (labeled A to H) to fill the empty box, completing the pattern that links all the shapes together. You must first give your explanation and then provide your answer at the end of your response in the format: 'The correct answer is: _'."
 
 mistral_prompt: str = "You are an IQ test solver. You are presented with an image of an IQ test question. The IQ test question is a\
     3x3 grid with nine boxes. The bottom-right box is empty and marked with a symbol 'x'. Following the instructions, you are to\
     deduce the pattern that links the shapes in the matrix and select the correct answer from the options provided under the matrix,\
     separated by a thick horizontal line, labeled A to H.\
     ### Instructions:\
-    #1.  " 
+    #1. Carefully observe the changes across each row, column, and diagonals, noting any consistent transformations (e.g., shape changes, rotations, or color shifts) that might follow a sequence or logical rule.\
+    # 2. Look for common pattern types like rotation, mirroring, color shades, or element counting, explaining briefly why each might apply.\
+    # 3. Identify any unique features in the shapes.\
+    # 4. Eliminate options (A to H) that clearly do not match the observed patterns.\
+    # 5. Select the correct shape that completes the pattern.\
+    # Take your time with each step and be thorough in your reasoning. Describe the thinking process.\
+    # Conclude with:\
+    'The correct answer is: _'." 
+
+# 1-shot prompt
+mistral_prompt_1shot: str = "" 
 
 
 if __name__ == "__main__":
@@ -143,7 +154,7 @@ if __name__ == "__main__":
     ##############################################################################################################
     print("Saving the results.")
 
-    FINAL_PATH = os.path.join(OUTPUT_PATH, MODEL ,CONFIG)
+    FINAL_PATH = os.path.join(OUTPUT_PATH, MODEL, PROMPT, CONFIG)
     os.makedirs(FINAL_PATH, exist_ok=True)
 
     for r in range(NUM_RUNS):
