@@ -122,7 +122,7 @@ if __name__ == "__main__":
                 "content": [
                     {
                         "type": "text",
-                        "text": task_prompt
+                        "text": mistral_prompt
                     },
                     {
                         "type": "image_url",
