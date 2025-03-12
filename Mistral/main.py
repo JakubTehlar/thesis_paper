@@ -13,8 +13,7 @@ MODELS_URL = "https://api.mistral.ai/v1/models"
 #DEFAULT_MODEL="pixtral-12b-2409"
 DEFAULT_MODEL="Mathstral-7B-v0.1"
 FINE_TUNED_MODELS = []
-ALL_MODELS = [] + FINE_TUNED_MODELS
-
+ALL_MODELS = [] + FINE_TUNED_MODELS + [DEFAULT_MODEL]
 PROMPT="mistral_prompt"
 
 task_prompt: str = "The image displays an intelligence test question featuring a 3x3 grid with nine boxes, one of which is empty and marked with a question mark (?). Your task is to select the correct shape from six options (labeled A to H) to fill the empty box, completing the pattern that links all the shapes together. You must first give your explanation and then provide your answer at the end of your response in the format: 'The correct answer is: _'."
