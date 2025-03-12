@@ -10,7 +10,8 @@ from tqdm import tqdm
 API_KEY_PATH="../../mistral_api_key.txt"
 API_KEY=os.environ["MISTRAL_API_KEY"]
 MODELS_URL = "https://api.mistral.ai/v1/models"
-DEFAULT_MODEL="pixtral-12b-2409"
+#DEFAULT_MODEL="pixtral-12b-2409"
+DEFAULT_MODEL="Mathstral-7B-v0.1"
 FINE_TUNED_MODELS = []
 ALL_MODELS = [] + FINE_TUNED_MODELS
 
@@ -83,7 +84,7 @@ if __name__ == "__main__":
             ALL_MODELS.append(model["id"])
     else:
         print(f"Failed to get the list of models. Status code: {response.status_code}")
-    assert ARGS.model in ALL_MODELS, f"Model '{ARGS.model}' not found in the list of models. If the model is a fine-tuned one, add it separately."# Available models: {ALL_MODELS}."
+    assert ARGS.model in ALL_MODELS, f"Model '{ARGS.model}' not found in the list of models. If the model is a fine-tuned one, add it separately. Available models: {ALL_MODELS}."
 
     ##############################################################################################################
     # Load the data sheet
