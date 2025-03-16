@@ -69,6 +69,11 @@ def plot_data(x: list, y: list, title: str, xlabel: str, ylabel: str, y_limit: i
             rotation=45
         )
 
+
+    # 50% line
+    # plt.axhline(y=50, color='firebrick', linestyle='--', alpha=0.7)
+    plt.axhline(y=50, color='firebrick', lw=2) 
+
     plt.grid(axis='y', linestyle='--', alpha=0.7)  
     plt.ylim(0, y_limit) 
     
