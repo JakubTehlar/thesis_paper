@@ -27,7 +27,7 @@ index,image_path,correct_answer,prediction,correct,answer
    Given the pattern of pentagons in the middle row, the correct shape for the empty box should be a pentagon.
 
 The correct answer is: E"
-1,Datasets/4_comp/output_data/oa_os_nc_distribute_nine_RAVEN_9972_train.png,C,C,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column.
+1,Datasets/4_comp/output_data/oa_os_nc_distribute_nine_RAVEN_9972_train.png,C,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column.
 
 ### Step-by-Step Analysis:
 
@@ -252,7 +252,7 @@ The previous shape in the middle row was a Black Pentagon, which transformed int
 
 The correct answer is: B
 The correct answer is: B"
-7,Datasets/4_comp/output_data/oa_os_nc_in_center_single_out_center_single_RAVEN_9958_test.png,D,D,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+7,Datasets/4_comp/output_data/oa_os_nc_in_center_single_out_center_single_RAVEN_9958_test.png,D,D,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
 
 1. Top row: 
    - Box 1: Circle

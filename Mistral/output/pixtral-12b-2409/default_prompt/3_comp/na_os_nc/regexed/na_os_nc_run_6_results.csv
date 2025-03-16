@@ -1,5 +1,5 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/3_comp/output_data/na_os_nc_left_center_single_right_center_single_RAVEN_9995_train.png,E,E,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each column and row:
+0,Datasets/3_comp/output_data/na_os_nc_left_center_single_right_center_single_RAVEN_9995_train.png,E,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each column and row:
 
 1. **First Column:**
    - Top: Diamond
@@ -107,7 +107,7 @@ The pattern that connects all the shapes together is based on the type of polygo
 
 The correct answer is: **C**
 "
-3,Datasets/3_comp/output_data/na_os_nc_in_center_single_out_center_single_RAVEN_9999_test.png,A,A,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+3,Datasets/3_comp/output_data/na_os_nc_in_center_single_out_center_single_RAVEN_9999_test.png,A,A,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
 
 1. Top-left: A triangle with a square inside.
 2. Top-middle: A pentagon with a triangle inside.
@@ -378,7 +378,7 @@ Following this pattern, the missing shape should be a Dark Gray Hexagon.
 The correct answer is: **E**
 
 The correct answer is: E"
-11,Datasets/3_comp/output_data/na_os_nc_in_center_single_out_center_single_RAVEN_9997_val.png,D,D,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+11,Datasets/3_comp/output_data/na_os_nc_in_center_single_out_center_single_RAVEN_9997_val.png,D,D,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. Top row: Pentagon with a square, hexagon with an inverted triangle, circle with a pentagon.
 2. Middle row: Pentagon with a diamond, hexagon with a square, circle with an inverted triangle.
