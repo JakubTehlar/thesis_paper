@@ -1,5 +1,5 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/4_comp/output_data/oa_os_oc_distribute_nine_RAVEN_9958_test.png,D,G**,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that should be placed in the empty box at the bottom right.
+0,Datasets/4_comp/output_data/oa_os_oc_distribute_nine_RAVEN_9958_test.png,D,G,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that should be placed in the empty box at the bottom right.
 
 ### Step-by-Step Analysis:
 
@@ -29,9 +29,7 @@ index,image_path,correct_answer,prediction,correct,answer
 Based on the analysis, the correct answer should fit the alternating pattern of circles and triangles observed in the bottom row. The correct answer is:
 
 **The correct answer is: G**"
-1,Datasets/4_comp/output_data/oa_os_oc_distribute_four_RAVEN_9971_train.png,G,"**x** (indicating that no consistent pattern can be determined from the given shapes).
-
-",False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes across the 3x3 grid. Let's break down the steps:
+1,Datasets/4_comp/output_data/oa_os_oc_distribute_four_RAVEN_9971_train.png,G,x,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes across the 3x3 grid. Let's break down the steps:
 
 1. **Observe the Changes Across Each Row, Column, and Diagonals:**
    - **First Row:** The shapes vary in size and form, including squares, circles, and hexagons. There is no clear transformation pattern in terms of shape or color.
@@ -63,7 +61,7 @@ Given the lack of a clear pattern, the problem might be designed to test logical
 The correct answer is: **x** (indicating that no consistent pattern can be determined from the given shapes).
 
 The correct answer is: x."
-2,Datasets/4_comp/output_data/oa_os_oc_distribute_four_RAVEN_9996_val.png,C,**Not immediately clear**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with an 'x'.
+2,Datasets/4_comp/output_data/oa_os_oc_distribute_four_RAVEN_9996_val.png,C,N,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with an 'x'.
 
 ### Step-by-Step Analysis:
 
@@ -100,7 +98,7 @@ The correct answer is: x."
 After analyzing the patterns and eliminating options, it appears that the correct answer is not immediately clear from the given shapes and transformations. The pattern does not follow a consistent rule based on shape, color, or orientation.
 
 The correct answer is: **Not immediately clear**."
-3,Datasets/4_comp/output_data/oa_os_oc_up_center_single_down_center_single_RAVEN_9955_train.png,E,**H**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid. Here is the step-by-step reasoning:
+3,Datasets/4_comp/output_data/oa_os_oc_up_center_single_down_center_single_RAVEN_9955_train.png,E,H,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid. Here is the step-by-step reasoning:
 
 1. **Observe the Changes Across Rows:**
    - First Row: The shapes change from a circle to a pentagon to a triangle. The shading also changes from light to medium to dark.
@@ -132,7 +130,7 @@ The correct answer is: **Not immediately clear**."
    - Option H matches the pattern of shape rotation and shading change.
 
 The correct answer is: **H**."
-4,Datasets/4_comp/output_data/oa_os_oc_in_distribute_four_out_center_single_RAVEN_9957_val.png,H,**H**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes within the 3x3 grid. Here are the steps to deduce the correct answer:
+4,Datasets/4_comp/output_data/oa_os_oc_in_distribute_four_out_center_single_RAVEN_9957_val.png,H,H,True,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes within the 3x3 grid. Here are the steps to deduce the correct answer:
 
 1. **Observe the Changes Across Each Row, Column, and Diagonals:**
    - **First Row (Diamonds):** The shapes inside the diamonds change from three shapes to two shapes to one shape.
@@ -161,7 +159,7 @@ The correct answer is: **H**."
 Given the observed patterns, the correct answer should be the simplest shape that fits the pattern of reduction and simplification.
 
 The correct answer is: **H**."
-5,Datasets/4_comp/output_data/oa_os_oc_left_center_single_right_center_single_RAVEN_9962_train.png,H,None of the above.**,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that should be placed in the bottom-right empty box.
+5,Datasets/4_comp/output_data/oa_os_oc_left_center_single_right_center_single_RAVEN_9962_train.png,H,N,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that should be placed in the bottom-right empty box.
 
 ### Step-by-Step Analysis:
 
@@ -199,9 +197,7 @@ After carefully analyzing the patterns and eliminating options that do not match
 Therefore, the correct answer is:
 
 **The correct answer is: None of the above.**"
-6,Datasets/4_comp/output_data/oa_os_oc_distribute_nine_RAVEN_9967_val.png,H,"None of the above.**
-
-This indicates that the provided options do not accurately represent the patterns observed in the matrix.",False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the matrix. Here is the step-by-step reasoning process:
+6,Datasets/4_comp/output_data/oa_os_oc_distribute_nine_RAVEN_9967_val.png,H,N,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the matrix. Here is the step-by-step reasoning process:
 
 1. **Observation of the Matrix:**
    - The matrix consists of various shapes including hexagons, squares, triangles, and circles.
@@ -240,7 +236,7 @@ Therefore, the correct answer is:
 **The correct answer is: None of the above.**
 
 This indicates that the provided options do not accurately represent the patterns observed in the matrix."
-7,Datasets/4_comp/output_data/oa_os_oc_center_single_RAVEN_9967_val.png,H,E.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes and deduce the rule that governs the transformations from one shape to the next. Let's break down the steps:
+7,Datasets/4_comp/output_data/oa_os_oc_center_single_RAVEN_9967_val.png,H,E,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes and deduce the rule that governs the transformations from one shape to the next. Let's break down the steps:
 
 1. **Observe the Changes Across Rows and Columns:**
    - **First Row:** The shapes are a diamond, a large circle, and a small triangle. The shapes change in size and shape.
@@ -267,7 +263,7 @@ Given the analysis, the most likely match is option E, which is an irregular sha
 
 **Conclusion:**
 The correct answer is: E."
-8,Datasets/4_comp/output_data/oa_os_oc_up_center_single_down_center_single_RAVEN_9958_test.png,F,C.**,False,"To solve this IQ test question, we need to analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with an 'x'.
+8,Datasets/4_comp/output_data/oa_os_oc_up_center_single_down_center_single_RAVEN_9958_test.png,F,C,False,"To solve this IQ test question, we need to analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with an 'x'.
 
 ### Step-by-Step Analysis:
 
@@ -300,7 +296,7 @@ The correct answer is: E."
 Therefore, the correct answer is:
 
 **The correct answer is: C.**"
-9,Datasets/4_comp/output_data/oa_os_oc_left_center_single_right_center_single_RAVEN_9967_val.png,A,**G**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the rule governing the transformations of the shapes. Let's break down the analysis step by step:
+9,Datasets/4_comp/output_data/oa_os_oc_left_center_single_right_center_single_RAVEN_9967_val.png,A,G,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the rule governing the transformations of the shapes. Let's break down the analysis step by step:
 
 1. **Observe the Changes Across Rows:**
    - **First Row:** The shapes change from squares to diamonds, with a consistent rotation.
@@ -341,7 +337,7 @@ Therefore, the correct answer is:
    - The correct answer is the dark gray circle rotated 90 degrees clockwise.
 
 The correct answer is: **G**."
-10,Datasets/4_comp/output_data/oa_os_oc_center_single_RAVEN_9950_train.png,A,D.**,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with an 'x'.
+10,Datasets/4_comp/output_data/oa_os_oc_center_single_RAVEN_9950_train.png,A,D,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with an 'x'.
 
 ### Step-by-Step Analysis:
 
@@ -373,7 +369,7 @@ The correct answer is: **G**."
 Therefore, the correct answer is:
 
 **The correct answer is: D.**"
-11,Datasets/4_comp/output_data/oa_os_oc_in_center_single_out_center_single_RAVEN_9954_train.png,F,**C**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes. Let's break down the steps:
+11,Datasets/4_comp/output_data/oa_os_oc_in_center_single_out_center_single_RAVEN_9954_train.png,F,C,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes. Let's break down the steps:
 
 1. **Observe the Changes Across Each Row, Column, and Diagonals:**
    - **First Row:** The shapes are circles with a square inside, all of different sizes.
@@ -406,7 +402,7 @@ Therefore, the correct answer is:
 Given the pattern, any of the options C, D, E, or F could be correct. However, since the question asks for a single answer, we can choose one of these options.
 
 The correct answer is: **C**."
-12,Datasets/4_comp/output_data/oa_os_oc_in_distribute_four_out_center_single_RAVEN_9963_train.png,F,**F**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the top row of the image. The goal is to identify the rule governing the transformation of shapes and apply it to the empty box marked with an 'x'.
+12,Datasets/4_comp/output_data/oa_os_oc_in_distribute_four_out_center_single_RAVEN_9963_train.png,F,F,True,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the top row of the image. The goal is to identify the rule governing the transformation of shapes and apply it to the empty box marked with an 'x'.
 
 ### Step-by-Step Analysis:
 

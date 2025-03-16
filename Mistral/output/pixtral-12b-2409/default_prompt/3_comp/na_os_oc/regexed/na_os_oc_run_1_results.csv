@@ -1,5 +1,5 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/3_comp/output_data/na_os_oc_up_center_single_down_center_single_RAVEN_9999_test.png,C,**F**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the grid row by row:
+0,Datasets/3_comp/output_data/na_os_oc_up_center_single_down_center_single_RAVEN_9999_test.png,C,F,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the grid row by row:
 
 1. **First Row**:
    - Shapes: Circle, Pentagon, Triangle
@@ -107,8 +107,7 @@ Upon closer inspection, we notice that the shapes in the grid alternate between 
 The pattern alternates between dark and light circles. Since the empty box is in the bottom row, which follows the dark circle pattern, we need a shape with a dark circle.
 
 The correct answer is: D"
-4,Datasets/3_comp/output_data/na_os_oc_up_center_single_down_center_single_RAVEN_9997_val.png,C,"**E**
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column:
+4,Datasets/3_comp/output_data/na_os_oc_up_center_single_down_center_single_RAVEN_9997_val.png,C,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column:
 
 1. **First Row:**
    - Shapes: Hexagon, Circle, Square
@@ -162,8 +161,7 @@ Given the patterns observed, the most consistent pattern across the columns is t
 
 The correct answer is: **E**
 "
-5,Datasets/3_comp/output_data/na_os_oc_distribute_nine_RAVEN_9879_test.png,H,"B
-",False,"To solve this puzzle, we need to identify the pattern that connects all the shapes in the grid. Let's analyze the shapes in the top row, middle row, and bottom row.
+5,Datasets/3_comp/output_data/na_os_oc_distribute_nine_RAVEN_9879_test.png,H,B,False,"To solve this puzzle, we need to identify the pattern that connects all the shapes in the grid. Let's analyze the shapes in the top row, middle row, and bottom row.
 
 1. **Top Row Analysis**:
    - The shapes in the top row are hexagons, squares, and triangles.
@@ -195,7 +193,7 @@ Given the pattern of alternating shapes and the requirement to complete the sequ
 
 The correct answer is: B
 "
-6,Datasets/3_comp/output_data/na_os_oc_in_distribute_four_out_center_single_RAVEN_9491_train.png,C,D.,False,"To solve this puzzle, we need to analyze the pattern in the 3x3 grid. Let's break down the shapes in each box and identify any consistent transformations or rules that apply to the shapes.
+6,Datasets/3_comp/output_data/na_os_oc_in_distribute_four_out_center_single_RAVEN_9491_train.png,C,D,False,"To solve this puzzle, we need to analyze the pattern in the 3x3 grid. Let's break down the shapes in each box and identify any consistent transformations or rules that apply to the shapes.
 
 1. **Identify the shapes in the grid:**
    - Top row: 
@@ -232,7 +230,7 @@ The correct answer is: B
    The correct option that matches the pattern is Option D, which is a hexagon with a triangle pointing down.
 
 The correct answer is: D."
-7,Datasets/3_comp/output_data/na_os_oc_distribute_nine_RAVEN_9873_train.png,B,**F**.,False,"To solve this puzzle, we need to analyze the patterns in the shapes and their arrangement. Let's break down the grid and the options step-by-step:
+7,Datasets/3_comp/output_data/na_os_oc_distribute_nine_RAVEN_9873_train.png,B,F,False,"To solve this puzzle, we need to analyze the patterns in the shapes and their arrangement. Let's break down the grid and the options step-by-step:
 
 1. **Identify the shapes in the grid:**
    - The top row has shapes: diamond, hexagon, triangle.
@@ -270,7 +268,7 @@ The correct answer is: D."
 Given these patterns, the correct shape to fill the empty box should be a medium-sized, dark gray, filled triangle.
 
 The correct answer is: **F**."
-8,Datasets/3_comp/output_data/na_os_oc_left_center_single_right_center_single_RAVEN_9970_train.png,G,**A**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column carefully.
+8,Datasets/3_comp/output_data/na_os_oc_left_center_single_right_center_single_RAVEN_9970_train.png,G,A,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column carefully.
 
 ### Step-by-Step Analysis:
 
@@ -326,7 +324,7 @@ The correct answer is: **F**."
 The pattern that emerges from the grid is that the hexagon shape appears consistently in the first, third, fifth, seventh, and ninth columns. Therefore, the correct shape to fill the empty box is a hexagon.
 
 The correct answer is: **A**"
-9,Datasets/3_comp/output_data/na_os_oc_distribute_four_RAVEN_9758_test.png,F,**F**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column:
+9,Datasets/3_comp/output_data/na_os_oc_distribute_four_RAVEN_9758_test.png,F,F,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column:
 
 1. **First Row:**
    - Shapes: Circle, Square, Triangle
@@ -404,7 +402,7 @@ Now, let's identify the pattern:
 Given this pattern, the empty box in the grid should contain a shape that follows the same pattern. The empty box is a circle, and the shapes in the other circles are a dot and an 'X'. Therefore, the missing shape should be a triangle.
 
 The correct answer is: E"
-12,Datasets/3_comp/output_data/na_os_oc_left_center_single_right_center_single_RAVEN_9979_test.png,E,**F**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column.
+12,Datasets/3_comp/output_data/na_os_oc_left_center_single_right_center_single_RAVEN_9979_test.png,E,F,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column.
 
 ### Top Row:
 - Shapes: Circle, Triangle, Square, Circle, Triangle, Square

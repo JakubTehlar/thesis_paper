@@ -40,7 +40,7 @@ The correct answer should fit the pattern observed in the grid. The last shape i
 Therefore, the correct answer is:
 
 The correct answer is: E"
-1,Datasets/3_comp/output_data/na_ns_oc_left_center_single_right_center_single_RAVEN_80_train.png,D,**C**,False,"To solve this puzzle, we need to analyze the pattern in the grid. The grid is divided into three rows and three columns, with each cell containing a different shape. The shapes include circles, squares, triangles, and pentagons, each in various orientations and shades.
+1,Datasets/3_comp/output_data/na_ns_oc_left_center_single_right_center_single_RAVEN_80_train.png,D,C,False,"To solve this puzzle, we need to analyze the pattern in the grid. The grid is divided into three rows and three columns, with each cell containing a different shape. The shapes include circles, squares, triangles, and pentagons, each in various orientations and shades.
 
 Let's break down the pattern:
 
@@ -97,8 +97,7 @@ The correct answer is: **C**"
 Therefore, the correct answer is:
 
 The correct answer is: C"
-3,Datasets/3_comp/output_data/na_ns_oc_distribute_four_RAVEN_68_test.png,F,"C
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+3,Datasets/3_comp/output_data/na_ns_oc_distribute_four_RAVEN_68_test.png,F,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
 
 1. Top row: 
    - Box 1: Hexagon
@@ -178,11 +177,7 @@ The pattern alternates between triangles with one dot and two dots. Since the em
 Therefore, the correct answer is a triangle with one dot on the left side.
 
 The correct answer is: C"
-6,Datasets/3_comp/output_data/na_ns_oc_center_single_RAVEN_12_train.png,B,"X
-
-However, since 'X' is not provided in the options, we need to re-evaluate the pattern. The most likely pattern is the alternation of shapes between triangles and diamonds. Since the last shape in the bottom row is a diamond, the next shape should be a triangle.
-
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in the grid:
+6,Datasets/3_comp/output_data/na_ns_oc_center_single_RAVEN_12_train.png,B,X,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in the grid:
 
 1. The top row has three shapes: a pentagon, a circle, and a smaller circle.
 2. The middle row has three shapes: a large triangle, a small triangle, and an 'X'.
@@ -249,7 +244,7 @@ The correct answer is: B"
 Given the pattern, the correct shape to fill the empty box should be a hexagon, as it follows the sequence of pentagon, hexagon, and cross.
 
 The correct answer is: C"
-8,Datasets/3_comp/output_data/na_ns_oc_in_distribute_four_out_center_single_RAVEN_499_test.png,D,**D**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+8,Datasets/3_comp/output_data/na_ns_oc_in_distribute_four_out_center_single_RAVEN_499_test.png,D,D,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. Top row: Hexagon with three triangles, Hexagon with one dot, Hexagon with three triangles.
 2. Middle row: Circle with four dots, Circle with two dots, Circle with one triangle.

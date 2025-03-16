@@ -1,5 +1,5 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/4_comp/output_data/na_ns_nc_left_center_single_right_center_single_RAVEN_9968_test.png,B,**E**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column:
+0,Datasets/4_comp/output_data/na_ns_nc_left_center_single_right_center_single_RAVEN_9968_test.png,B,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column:
 
 1. **First Row**: The shapes are a hexagon, a pentagon, and a circle.
 2. **Second Row**: The shapes are a hexagon, a triangle, and a square.
@@ -30,9 +30,7 @@ All the hexagon options (A, C, D, E) fit the pattern. However, we need to determ
 Considering the placement and the continuity of the pattern, the correct answer is the hexagon that fits the most consistently with the existing shapes in the grid.
 
 The correct answer is: **E**."
-1,Datasets/4_comp/output_data/na_ns_nc_up_center_single_down_center_single_RAVEN_9815_train.png,D,"**F**
-
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
+1,Datasets/4_comp/output_data/na_ns_nc_up_center_single_down_center_single_RAVEN_9815_train.png,D,F,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
 
 ### Row 1:
 - Top-left: Square (black)
@@ -113,7 +111,7 @@ The correct answer is: F"
    - Options A, C, and E are circles with the correct smaller shapes.
 
 The correct answer is: A"
-3,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9872_train.png,F,A**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+3,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9872_train.png,F,A,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
 
 1. **Top Row**: The shapes are a hexagon, a pentagon, and a square.
 2. **Middle Row**: The shapes are a triangle, a pentagon, and a hexagon.
@@ -160,8 +158,7 @@ The pattern seems to involve the size and type of the shapes inside the larger s
 Given this pattern, the correct shape to fill the empty box should follow the pattern of increasing size and type of the shapes inside the larger shapes.
 
 The correct answer is: E"
-5,Datasets/4_comp/output_data/na_ns_nc_center_single_RAVEN_9904_train.png,H,"B
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes step-by-step:
+5,Datasets/4_comp/output_data/na_ns_nc_center_single_RAVEN_9904_train.png,H,B,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes step-by-step:
 
 1. **Identify the shapes in the grid:**
    - Top row: Dark triangle, dark square, dark circle
@@ -192,7 +189,7 @@ The correct answer is: E"
 
 The correct answer is: B
 "
-6,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9874_train.png,G,**A**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column carefully.
+6,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9874_train.png,G,A,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column carefully.
 
 ### Step-by-Step Analysis:
 
@@ -373,8 +370,7 @@ Given the sequence in the grid, the empty box should be filled with a shape that
 Given the sequence in the grid, the empty box should be filled with a shape that continues the pattern. The shapes in the grid are squares, hexagons, and pentagons. The pattern alternates between different types of polygons.
 
 "
-9,Datasets/4_comp/output_data/na_ns_nc_distribute_nine_RAVEN_9968_test.png,A,"B.
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each box and their positions:
+9,Datasets/4_comp/output_data/na_ns_nc_distribute_nine_RAVEN_9968_test.png,A,B,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each box and their positions:
 
 1. **First Row:**
    - Box 1: Hexagon
@@ -409,8 +405,7 @@ Therefore, the correct answer is a circle.
 
 The correct answer is: B.
 "
-10,Datasets/4_comp/output_data/na_ns_nc_in_center_single_out_center_single_RAVEN_9805_train.png,B,"C
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+10,Datasets/4_comp/output_data/na_ns_nc_in_center_single_out_center_single_RAVEN_9805_train.png,B,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. Top row: Triangle with a square, Pentagon with a square, Circle with a square.
 2. Middle row: Triangle with a pentagon, Pentagon with a triangle, Circle with a pentagon.
@@ -456,9 +451,7 @@ Now, let's apply this pattern to the first two shapes in the bottom row:
 Thus, the correct shape to fill the empty box is a Pentagon.
 
 The correct answer is: E"
-12,Datasets/4_comp/output_data/na_ns_nc_left_center_single_right_center_single_RAVEN_9966_val.png,F,"**C**
-
-",False,"To solve this puzzle, we need to analyze the patterns in the shapes and their arrangement in the grid. Let's break down the patterns step-by-step:
+12,Datasets/4_comp/output_data/na_ns_nc_left_center_single_right_center_single_RAVEN_9966_val.png,F,C,False,"To solve this puzzle, we need to analyze the patterns in the shapes and their arrangement in the grid. Let's break down the patterns step-by-step:
 
 1. **Identify the shapes in the grid:**
    - Top row: Square, Triangle pointing down, Triangle pointing up, Pentagon, Hexagon, Circle

@@ -1,5 +1,5 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/3_comp/output_data/oa_os_nc_left_center_single_right_center_single_RAVEN_9928_test.png,H,**C**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column:
+0,Datasets/3_comp/output_data/oa_os_nc_left_center_single_right_center_single_RAVEN_9928_test.png,H,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column:
 
 ### Top Row:
 - Shapes: Triangle, Circle, Pentagon, Circle, Pentagon, Circle, Triangle
@@ -41,7 +41,7 @@ The empty box is in the middle column, which alternates between Circle and Penta
 Therefore, the correct answer is:
 
 The correct answer is: **C**."
-1,Datasets/3_comp/output_data/oa_os_nc_distribute_nine_RAVEN_9974_train.png,G,E**,False,"To solve this puzzle, we need to identify the pattern that connects all the shapes in the grid. Let's analyze the shapes in each box:
+1,Datasets/3_comp/output_data/oa_os_nc_distribute_nine_RAVEN_9974_train.png,G,E,False,"To solve this puzzle, we need to identify the pattern that connects all the shapes in the grid. Let's analyze the shapes in each box:
 
 1. **Top Row**: The shapes are a circle, a triangle pointing down, and a pentagon.
 2. **Middle Row**: The shapes are a circle, a triangle pointing down, and a pentagon.
@@ -63,7 +63,7 @@ Given this pattern, the empty box in the grid should follow the sequence of the 
 Therefore, the correct answer is:
 
 **The correct answer is: E**"
-2,Datasets/3_comp/output_data/oa_os_nc_in_distribute_four_out_center_single_RAVEN_9998_test.png,C,"A, C, E, or F.",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+2,Datasets/3_comp/output_data/oa_os_nc_in_distribute_four_out_center_single_RAVEN_9998_test.png,C,A,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
 
 1. Top row: pentagon, pentagon, circle
 2. Middle row: circle, circle, pentagon
@@ -100,7 +100,7 @@ All these options have pentagons with two dots, which matches the pattern in the
 Therefore, the correct answer is any of the options A, C, E, or F.
 
 The correct answer is: A, C, E, or F."
-3,Datasets/3_comp/output_data/oa_os_nc_in_distribute_four_out_center_single_RAVEN_9999_test.png,F,E.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes and their arrangements step-by-step.
+3,Datasets/3_comp/output_data/oa_os_nc_in_distribute_four_out_center_single_RAVEN_9999_test.png,F,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes and their arrangements step-by-step.
 
 1. **Identify the shapes in the grid:**
    - Top row: Circle, Hexagon, Triangle
@@ -173,9 +173,7 @@ The pattern alternates between different shapes in each row and column. The empt
 Given this pattern, the correct shape to fill the empty box should be consistent with the alternation of shapes. The previous shape in the column was a hexagon, and the previous shape in the row was a triangle. Therefore, the shape that fits the pattern is a black triangle.
 
 The correct answer is: F"
-5,Datasets/3_comp/output_data/oa_os_nc_up_center_single_down_center_single_RAVEN_9973_train.png,E,"C
-
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
+5,Datasets/3_comp/output_data/oa_os_nc_up_center_single_down_center_single_RAVEN_9973_train.png,E,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
 
 ### Top Row:
 1. Diamond (black)
@@ -280,8 +278,7 @@ Comparing this sequence with the options, we see that option C matches the patte
 C. [Circle] [Hexagon] [Circle]
 
 The correct answer is: C"
-8,Datasets/3_comp/output_data/oa_os_nc_up_center_single_down_center_single_RAVEN_9967_val.png,H,"D
-",False,"To solve this problem, we need to analyze the pattern in the 3x3 grid. The shapes in the grid are circles, squares, pentagons, and triangles, and they appear in different orientations and shades.
+8,Datasets/3_comp/output_data/oa_os_nc_up_center_single_down_center_single_RAVEN_9967_val.png,H,D,False,"To solve this problem, we need to analyze the pattern in the 3x3 grid. The shapes in the grid are circles, squares, pentagons, and triangles, and they appear in different orientations and shades.
 
 1. **Identify the Shapes and Their Positions:**
    - Top row: Circle, Pentagon, Triangle
@@ -309,8 +306,7 @@ The correct answer is: C"
 
 The correct answer is: D
 "
-9,Datasets/3_comp/output_data/oa_os_nc_in_center_single_out_center_single_RAVEN_9955_train.png,C,"**B**.
-",False,"To solve this puzzle, we need to analyze the patterns in the shapes and determine how they relate to each other. Let's break down the elements in the image:
+9,Datasets/3_comp/output_data/oa_os_nc_in_center_single_out_center_single_RAVEN_9955_train.png,C,B,False,"To solve this puzzle, we need to analyze the patterns in the shapes and determine how they relate to each other. Let's break down the elements in the image:
 
 1. **Top Row**: The shapes are a circle, a pentagon, and a triangle, each containing a hexagon.
 2. **Middle Row**: The shapes are a circle, a pentagon, and a triangle, each containing a triangle.

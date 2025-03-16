@@ -1,5 +1,5 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/4_comp/output_data/oa_ns_nc_center_single_RAVEN_9930_train.png,H,**G**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes. Let's break down the steps:
+0,Datasets/4_comp/output_data/oa_ns_nc_center_single_RAVEN_9930_train.png,H,G,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes. Let's break down the steps:
 
 1. **Observe the Changes Across Rows:**
    - First Row: Triangle, Pentagon, Circle
@@ -34,7 +34,7 @@ index,image_path,correct_answer,prediction,correct,answer
    - Based on the observed patterns, the correct answer should be a hollow triangle with a filled bottom half, matching the pattern seen in the third row and first column.
 
 The correct answer is: **G**."
-1,Datasets/4_comp/output_data/oa_ns_nc_in_center_single_out_center_single_RAVEN_9933_train.png,D,**H**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the rule governing the transformations of the shapes. Let's break it down step-by-step:
+1,Datasets/4_comp/output_data/oa_ns_nc_in_center_single_out_center_single_RAVEN_9933_train.png,D,H,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the rule governing the transformations of the shapes. Let's break it down step-by-step:
 
 1. **Observation of Rows:**
    - **First Row:** The shapes are a circle with a hexagon, a pentagon with a circle, and a triangle with a triangle.
@@ -69,7 +69,7 @@ The correct answer is: **G**."
    - The correct answer is **Option H**, which correctly follows the observed patterns in the 3x3 grid.
 
 The correct answer is: **H**."
-2,Datasets/4_comp/output_data/oa_ns_nc_distribute_nine_RAVEN_9933_train.png,D,**H**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the 3x3 grid. Here are the steps to follow:
+2,Datasets/4_comp/output_data/oa_ns_nc_distribute_nine_RAVEN_9933_train.png,D,H,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the 3x3 grid. Here are the steps to follow:
 
 1. **Observe the Changes Across Each Row, Column, and Diagonals:**
    - **First Row:** The shapes change from circles to squares to triangles.
@@ -99,7 +99,7 @@ The correct answer is: **H**."
 
 ### Conclusion:
 The correct answer is: **H**."
-3,Datasets/4_comp/output_data/oa_ns_nc_distribute_four_RAVEN_9742_train.png,H,**F**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and match them with the options provided below the grid. Let's break down the steps:
+3,Datasets/4_comp/output_data/oa_ns_nc_distribute_four_RAVEN_9742_train.png,H,F,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and match them with the options provided below the grid. Let's break down the steps:
 
 ### Step 1: Observe the Changes Across Each Row, Column, and Diagonals
 - **First Row**: The shapes change from a pentagon to a triangle, then to a diamond.
@@ -137,7 +137,7 @@ The correct answer is: **H**."
 
 ### Conclusion
 The correct answer is: **F**."
-4,Datasets/4_comp/output_data/oa_ns_nc_distribute_four_RAVEN_9763_train.png,E,**H**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes across the 3x3 grid. Here are the steps to deduce the correct answer:
+4,Datasets/4_comp/output_data/oa_ns_nc_distribute_four_RAVEN_9763_train.png,E,H,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes across the 3x3 grid. Here are the steps to deduce the correct answer:
 
 1. **Observe the Changes Across Each Row, Column, and Diagonals:**
    - **First Row:** The shapes change from a pentagon to a square to a triangle. The color shifts from light gray to dark gray to black.
@@ -173,7 +173,7 @@ The correct answer is: **F**."
 
 ### Conclusion:
 The correct answer is: **H**."
-5,Datasets/4_comp/output_data/oa_ns_nc_left_center_single_right_center_single_RAVEN_9977_val.png,C,**H**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with 'x'.
+5,Datasets/4_comp/output_data/oa_ns_nc_left_center_single_right_center_single_RAVEN_9977_val.png,C,H,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with 'x'.
 
 ### Step-by-Step Analysis:
 
@@ -213,10 +213,7 @@ The correct answer is: **H**."
 
 ### Conclusion:
 The correct answer is: **H**."
-6,Datasets/4_comp/output_data/oa_ns_nc_distribute_nine_RAVEN_9929_test.png,E,"None of the provided options match the observed patterns.
-
-```markdown
-",False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with an 'x'.
+6,Datasets/4_comp/output_data/oa_ns_nc_distribute_nine_RAVEN_9929_test.png,E,N,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with an 'x'.
 
 ### Step-by-Step Analysis:
 
@@ -257,7 +254,7 @@ The correct answer is: None of the provided options match the observed patterns.
 ```markdown
 The correct answer is: None of the provided options match the observed patterns.
 ```"
-7,Datasets/4_comp/output_data/oa_ns_nc_center_single_RAVEN_9917_val.png,B,**F**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the 3x3 grid. Let's break down the steps:
+7,Datasets/4_comp/output_data/oa_ns_nc_center_single_RAVEN_9917_val.png,B,F,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the 3x3 grid. Let's break down the steps:
 
 1. **Observation of Shapes:**
    - The top row has three shapes: a hexagon, a pentagon, and a small square.
@@ -286,7 +283,7 @@ The correct answer is: None of the provided options match the observed patterns.
    - Given the pattern of introducing non-polygonal shapes in the third row, the most fitting shape from the options provided is the one that continues this trend.
 
 The correct answer is: **F**."
-8,Datasets/4_comp/output_data/oa_ns_nc_in_center_single_out_center_single_RAVEN_9871_train.png,D,**G**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes and deduce the rule that governs the transformation of the shapes. Here is the step-by-step reasoning process:
+8,Datasets/4_comp/output_data/oa_ns_nc_in_center_single_out_center_single_RAVEN_9871_train.png,D,G,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes and deduce the rule that governs the transformation of the shapes. Here is the step-by-step reasoning process:
 
 1. **Observe the Changes Across Rows:**
    - First Row: Triangle, Diamond, Circle.
@@ -324,7 +321,7 @@ The correct answer is: **F**."
    - The correct answer should match the pattern observed in the grid. The diamond with a gray square inside and a specific orientation seems to fit the pattern.
 
 The correct answer is: **G**."
-9,Datasets/4_comp/output_data/oa_ns_nc_up_center_single_down_center_single_RAVEN_9960_train.png,B,**H**.,False,"To solve this IQ test question, let's analyze the given 3x3 grid and the options provided below it.
+9,Datasets/4_comp/output_data/oa_ns_nc_up_center_single_down_center_single_RAVEN_9960_train.png,B,H,False,"To solve this IQ test question, let's analyze the given 3x3 grid and the options provided below it.
 
 ### Step-by-Step Analysis:
 
@@ -360,7 +357,7 @@ The correct answer is: **G**."
 
 ### Conclusion:
 The correct answer is: **H**."
-10,Datasets/4_comp/output_data/oa_ns_nc_left_center_single_right_center_single_RAVEN_9986_val.png,A,**H**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that should be placed in the bottom-right empty box.
+10,Datasets/4_comp/output_data/oa_ns_nc_left_center_single_right_center_single_RAVEN_9986_val.png,A,H,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that should be placed in the bottom-right empty box.
 
 ### Step-by-Step Analysis:
 
@@ -402,7 +399,7 @@ The correct answer is: **H**."
 The correct answer is **Option H**, as it follows the observed pattern of shape transformation and size reduction.
 
 The correct answer is: **H**."
-11,Datasets/4_comp/output_data/oa_ns_nc_in_distribute_four_out_center_single_RAVEN_9952_train.png,B,**B**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the 3x3 grid. Let's break down the steps:
+11,Datasets/4_comp/output_data/oa_ns_nc_in_distribute_four_out_center_single_RAVEN_9952_train.png,B,B,True,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the 3x3 grid. Let's break down the steps:
 
 1. **Observe the Changes Across Each Row, Column, and Diagonals:**
    - **First Row:** The shapes change from a triangle to a diamond to a pentagon.
@@ -437,7 +434,7 @@ The correct answer is: **H**."
 
 **Conclusion:**
 The correct answer is: **B**."
-12,Datasets/4_comp/output_data/oa_ns_nc_in_distribute_four_out_center_single_RAVEN_9959_test.png,D,C.**,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes across the 3x3 grid. Let's break it down step-by-step:
+12,Datasets/4_comp/output_data/oa_ns_nc_in_distribute_four_out_center_single_RAVEN_9959_test.png,D,C,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes across the 3x3 grid. Let's break it down step-by-step:
 
 1. **Observe the Changes Across Each Row, Column, and Diagonals:**
    - **First Row:** 

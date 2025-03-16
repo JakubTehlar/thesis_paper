@@ -1,5 +1,5 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/4_comp/output_data/oa_ns_oc_distribute_nine_RAVEN_9938_test.png,G,**F**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+0,Datasets/4_comp/output_data/oa_ns_oc_distribute_nine_RAVEN_9938_test.png,G,F,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
 
 1. **Top Row**: Circle, Square, Hexagon
 2. **Middle Row**: Triangle, Diamond, Pentagon
@@ -57,9 +57,7 @@ The pattern seems to involve shapes transitioning from triangles to circles and 
 Therefore, the correct answer is Option A, which is a circle with three dots inside.
 
 The correct answer is: A"
-2,Datasets/4_comp/output_data/oa_ns_oc_distribute_four_RAVEN_9924_train.png,G,"D**
-
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+2,Datasets/4_comp/output_data/oa_ns_oc_distribute_four_RAVEN_9924_train.png,G,D,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
 
 1. **Top Row**: Circle, Pentagon, Triangle
 2. **Middle Row**: Pentagon, Pentagon, Pentagon
@@ -167,8 +165,7 @@ Let's examine the options A to F:
 Given the pattern in the grid, the empty box should follow the sequence of the third row, which contains diamonds with three dots. Therefore, the correct answer should be a diamond with three dots.
 
 The correct answer is: D"
-6,Datasets/4_comp/output_data/oa_ns_oc_center_single_RAVEN_9939_test.png,D,"C
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+6,Datasets/4_comp/output_data/oa_ns_oc_center_single_RAVEN_9939_test.png,D,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. Top row: Pentagon, Diamond, Triangle
 2. Middle row: Pentagon, Irregular Pentagon, Diamond
@@ -193,7 +190,7 @@ Therefore, the correct answer is based on the closest matching shape type and co
 
 The correct answer is: C
 "
-7,Datasets/4_comp/output_data/oa_ns_oc_in_center_single_out_center_single_RAVEN_9910_train.png,E,**E**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column.
+7,Datasets/4_comp/output_data/oa_ns_oc_in_center_single_out_center_single_RAVEN_9910_train.png,E,E,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column.
 
 ### Top Row:
 - Shape 1: Hexagon with a triangle inside
@@ -238,9 +235,7 @@ Given the progression and the shapes, the correct answer should be a shape that 
 The correct answer is a shape with a diamond inside a polygon, which matches the pattern observed in the middle and bottom rows.
 
 The correct answer is: **E**"
-8,Datasets/4_comp/output_data/oa_ns_oc_up_center_single_down_center_single_RAVEN_9957_val.png,C,"**A**
-
-Explanation: The shape that completes the pattern is a Pentagon.",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row:
+8,Datasets/4_comp/output_data/oa_ns_oc_up_center_single_down_center_single_RAVEN_9957_val.png,C,A,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row:
 
 1. **First Row:**
    - Shapes: Pentagon, Hexagon, Square

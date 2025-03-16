@@ -84,8 +84,7 @@ Let's analyze the pattern:
 Given this pattern, the correct answer should be a shape with three of each type of smaller shape inside.
 
 The correct answer is: E"
-3,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9872_train.png,F,"C
-",False,"To solve this puzzle, we need to analyze the pattern in the 3x3 grid. Each shape in the grid is represented by a unique symbol, and we need to determine the rule governing the arrangement of these shapes.
+3,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9872_train.png,F,C,False,"To solve this puzzle, we need to analyze the pattern in the 3x3 grid. Each shape in the grid is represented by a unique symbol, and we need to determine the rule governing the arrangement of these shapes.
 
 1. **Identify the shapes in the grid**:
    - Top row: Square, Hexagon, Circle
@@ -147,8 +146,7 @@ Looking at the options:
 The correct answer should be a pentagon with a small hexagon inside, which matches option B.
 
 The correct answer is: B"
-5,Datasets/4_comp/output_data/na_ns_nc_center_single_RAVEN_9904_train.png,H,"**B**
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+5,Datasets/4_comp/output_data/na_ns_nc_center_single_RAVEN_9904_train.png,H,B,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. Top row: dark triangle, dark square, dark circle
 2. Middle row: empty square, empty circle, light triangle
@@ -181,8 +179,7 @@ The correct answer is a dark square, which matches the pattern of alternating da
 
 The correct answer is: **B**
 "
-6,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9874_train.png,G,"C
-",False,"To solve this puzzle, we need to analyze the pattern in the grid. The shapes in the grid are arranged in a specific sequence, and we need to identify the rule governing their arrangement.
+6,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9874_train.png,G,C,False,"To solve this puzzle, we need to analyze the pattern in the grid. The shapes in the grid are arranged in a specific sequence, and we need to identify the rule governing their arrangement.
 
 1. **Identify the shapes in the grid:**
    - Top row: circle, hexagon (white), pentagon (dark), hexagon (dark), pentagon (dark)
@@ -286,7 +283,7 @@ Upon examining the grid, we notice that the shapes transition from squares to he
 Given this pattern, the correct shape to fill the empty box should be a dark diamond, which fits the sequence of alternating shapes and colors.
 
 The correct answer is: C"
-9,Datasets/4_comp/output_data/na_ns_nc_distribute_nine_RAVEN_9968_test.png,A,**A**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column.
+9,Datasets/4_comp/output_data/na_ns_nc_distribute_nine_RAVEN_9968_test.png,A,A,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column.
 
 ### Observations:
 1. **First Row:**
@@ -367,9 +364,7 @@ Among the options, the correct choice that matches the pattern is:
 - A: Circle with a dot
 
 The correct answer is: A"
-12,Datasets/4_comp/output_data/na_ns_nc_left_center_single_right_center_single_RAVEN_9966_val.png,F,"**E**
-
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each column and row to find the rule governing the sequence.
+12,Datasets/4_comp/output_data/na_ns_nc_left_center_single_right_center_single_RAVEN_9966_val.png,F,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each column and row to find the rule governing the sequence.
 
 ### Step-by-Step Analysis:
 

@@ -1,5 +1,5 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/4_comp/output_data/oa_ns_nc_center_single_RAVEN_9930_train.png,H,**F**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in the grid row by row.
+0,Datasets/4_comp/output_data/oa_ns_nc_center_single_RAVEN_9930_train.png,H,F,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in the grid row by row.
 
 1. **First Row:**
    - Shapes: Large triangle (gray), pentagon (gray), large circle (gray)
@@ -60,7 +60,7 @@ Given the pattern, the correct answer should be a shape that follows the pattern
 Therefore, the correct answer is:
 
 The correct answer is: C"
-2,Datasets/4_comp/output_data/oa_ns_nc_distribute_nine_RAVEN_9933_train.png,D,**D**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
+2,Datasets/4_comp/output_data/oa_ns_nc_distribute_nine_RAVEN_9933_train.png,D,D,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
 
 1. **Top Row**: 
    - Box 1: Circle
@@ -132,7 +132,7 @@ Given this pattern, the empty box in the third column of the bottom row should b
 Therefore, the correct answer is:
 
 The correct answer is: E"
-5,Datasets/4_comp/output_data/oa_ns_nc_left_center_single_right_center_single_RAVEN_9977_val.png,C,**C**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each column and row.
+5,Datasets/4_comp/output_data/oa_ns_nc_left_center_single_right_center_single_RAVEN_9977_val.png,C,C,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each column and row.
 
 ### Step-by-Step Analysis:
 
@@ -204,8 +204,7 @@ Since the pattern alternates between a diamond, a hexagon, and a square, the cor
 Given the options, the correct answer is:
 
 The correct answer is: A"
-7,Datasets/4_comp/output_data/oa_ns_nc_center_single_RAVEN_9917_val.png,B,"**C**
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+7,Datasets/4_comp/output_data/oa_ns_nc_center_single_RAVEN_9917_val.png,B,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. The top row has: a hexagon, a pentagon, and a small square.
 2. The middle row has: a small pentagon, a diamond, and a triangle.
@@ -312,9 +311,7 @@ The shapes in the grid include a Circle, Hexagon, Square, Pentagon, and Triangle
 Since the pattern requires each box to contain a unique shape, the correct answer should be a shape that is not repeated in the grid. The Circle (D) is the only shape that fits this criterion.
 
 The correct answer is: D"
-10,Datasets/4_comp/output_data/oa_ns_nc_left_center_single_right_center_single_RAVEN_9986_val.png,A,"**C**
-
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column.
+10,Datasets/4_comp/output_data/oa_ns_nc_left_center_single_right_center_single_RAVEN_9986_val.png,A,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column.
 
 ### Step-by-Step Analysis:
 
@@ -391,7 +388,7 @@ The pattern seems to be that the number of circles in the hexagons increases by 
 Option F contains four circles, which does not match the pattern. Therefore, the correct answer must be the one that fits the pattern of increasing the number of circles.
 
 The correct answer is: E"
-12,Datasets/4_comp/output_data/oa_ns_nc_in_distribute_four_out_center_single_RAVEN_9959_test.png,D,D**.,False,"To solve this puzzle, we need to analyze the patterns in the shapes within the 3x3 grid. The shapes are circles and pentagons, and each shape contains a specific symbol: a square, a triangle, or a circle.
+12,Datasets/4_comp/output_data/oa_ns_nc_in_distribute_four_out_center_single_RAVEN_9959_test.png,D,D,True,"To solve this puzzle, we need to analyze the patterns in the shapes within the 3x3 grid. The shapes are circles and pentagons, and each shape contains a specific symbol: a square, a triangle, or a circle.
 
 Let's break down the patterns:
 

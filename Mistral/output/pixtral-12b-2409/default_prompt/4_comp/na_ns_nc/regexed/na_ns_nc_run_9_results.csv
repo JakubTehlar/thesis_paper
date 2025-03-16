@@ -1,6 +1,5 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/4_comp/output_data/na_ns_nc_left_center_single_right_center_single_RAVEN_9968_test.png,B,"B
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column.
+0,Datasets/4_comp/output_data/na_ns_nc_left_center_single_right_center_single_RAVEN_9968_test.png,B,B,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column.
 
 ### Top Row:
 - Shapes: Hexagon, Square, Pentagon, Hexagon, Hexagon, Hexagon, Hexagon, Hexagon, Hexagon
@@ -34,7 +33,7 @@ Given this pattern, the correct shape to fill the empty box (which is in the mid
 
 The correct answer is: B
 "
-1,Datasets/4_comp/output_data/na_ns_nc_up_center_single_down_center_single_RAVEN_9815_train.png,D,**Diamond (gray)**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
+1,Datasets/4_comp/output_data/na_ns_nc_up_center_single_down_center_single_RAVEN_9815_train.png,D,D,True,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
 
 ### Row 1:
 - Top-left: Square (black)
@@ -117,7 +116,7 @@ The pattern seems to alternate between shapes with circles and pentagons inside 
 The correct answer is **D**: Pentagon with two circles and one triangle inside.
 
 The correct answer is: D"
-3,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9872_train.png,F,E.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column:
+3,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9872_train.png,F,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column:
 
 1. **First Row**:
    - Shapes: Square, Hexagon, Triangle
@@ -193,8 +192,7 @@ Among the options:
 The correct answer should be a larger shape inside the larger triangle. Therefore, the correct answer is:
 
 The correct answer is: E"
-5,Datasets/4_comp/output_data/na_ns_nc_center_single_RAVEN_9904_train.png,H,"E
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+5,Datasets/4_comp/output_data/na_ns_nc_center_single_RAVEN_9904_train.png,H,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. Top row: Dark triangle, dark square, dark circle
 2. Middle row: Light square, light circle, light triangle
@@ -230,7 +228,7 @@ Therefore, the correct answer is the light hexagon (E).
 
 The correct answer is: E
 "
-6,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9874_train.png,G,**E**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column:
+6,Datasets/4_comp/output_data/na_ns_nc_distribute_four_RAVEN_9874_train.png,G,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each row and column:
 
 1. **First Row**:
    - Shapes: Square, Diamond, Pentagon, Hexagon, Pentagon, Diamond, Square
@@ -259,7 +257,7 @@ The correct answer is: E
 Given these patterns, we need to determine which shape fits in the empty box to maintain the pattern. The empty box is in the second column of the third row. The second column has repeated pentagons in the first row and repeated hexagons in the third row. Therefore, the shape that fits the pattern in the second column of the third row should be a hexagon.
 
 The correct answer is: **E**."
-7,Datasets/4_comp/output_data/na_ns_nc_up_center_single_down_center_single_RAVEN_9819_test.png,G,**F**.,False,"To solve this puzzle, we need to analyze the pattern in the 3x3 grid. Each row and column contains different shapes, and we need to identify the rule governing the arrangement of these shapes.
+7,Datasets/4_comp/output_data/na_ns_nc_up_center_single_down_center_single_RAVEN_9819_test.png,G,F,False,"To solve this puzzle, we need to analyze the pattern in the 3x3 grid. Each row and column contains different shapes, and we need to identify the rule governing the arrangement of these shapes.
 
 1. **First Row Analysis**:
    - Shapes: Square, Pentagon, Hexagon
@@ -293,8 +291,7 @@ The correct answer is: **E**."
 Therefore, the correct shape to fill the empty box is a Hexagon.
 
 The correct answer is: **F**."
-8,Datasets/4_comp/output_data/na_ns_nc_center_single_RAVEN_9897_val.png,B,"D.
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+8,Datasets/4_comp/output_data/na_ns_nc_center_single_RAVEN_9897_val.png,B,D,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. Top row: Square, small square, large square
 2. Middle row: Hexagon, large hexagon, small hexagon
@@ -347,8 +344,7 @@ The correct answer is: D.
    - The correct shape to fill the empty box is a hexagon.
 
 The correct answer is: C"
-10,Datasets/4_comp/output_data/na_ns_nc_in_center_single_out_center_single_RAVEN_9805_train.png,B,"C
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+10,Datasets/4_comp/output_data/na_ns_nc_in_center_single_out_center_single_RAVEN_9805_train.png,B,C,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. Top row: Triangle with a square, Pentagon with a square, Circle with a square.
 2. Middle row: Triangle with a pentagon, Pentagon with a triangle, Circle with a pentagon.
@@ -369,8 +365,7 @@ Given this, the correct answer should follow the pattern of the last row, which 
 
 The correct answer is: C
 "
-11,Datasets/4_comp/output_data/na_ns_nc_in_distribute_four_out_center_single_RAVEN_9947_val.png,H,"D
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
+11,Datasets/4_comp/output_data/na_ns_nc_in_distribute_four_out_center_single_RAVEN_9947_val.png,H,D,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
 
 1. The first row contains:
    - A triangle with a dot near the top-left vertex.
