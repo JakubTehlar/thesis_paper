@@ -46,8 +46,8 @@ def plot_data(x: list, y: list, title: str, xlabel: str, ylabel: str, y_limit: i
     plt.figure(figsize=(12, 7))  
     bars = plt.bar(range(len(x)), y, color=colors, edgecolor='black')  
     plt.title(title)
-    plt.xlabel(xlabel, loc="center", fontweight='bold', fontsize=12)
-    plt.ylabel(ylabel, fontweight='bold', fontsize=12)
+    plt.xlabel(xlabel, loc="left", fontweight='bold', fontsize=10)
+    plt.ylabel(ylabel, fontsize=10, fontweight='bold')
     plt.xticks([])  
 
     for bar, label in zip(bars, x):
@@ -58,6 +58,15 @@ def plot_data(x: list, y: list, title: str, xlabel: str, ylabel: str, y_limit: i
             ha='center', va='center',  # Center alignment
             fontsize=10, color='black',
             rotation=90  
+        )
+    for bar, label in zip(bars, y):
+        plt.text(
+            bar.get_x() + bar.get_width() / 2,  # Center horizontally
+            bar.get_height() - 5,  # Position in the middle of the bar
+            f"{label:.2f}%",  # The label text
+            ha='center', va='center',  # Center alignment
+            fontsize=9, color='black',
+            rotation=45
         )
 
     plt.grid(axis='y', linestyle='--', alpha=0.7)  
@@ -84,18 +93,13 @@ def plot_data(x: list, y: list, title: str, xlabel: str, ylabel: str, y_limit: i
         plt.show()
 
 
-
-def save_plot():
-    pass
-
-
 if __name__ == "__main__":
     DEFAULT_PATH = f"../output/{MODEL}/{PROMPT}"
 
     color_3_comp_ag = "limegreen"
     color_4_comp_ag = "royalblue"
     color_3_comp_cp = "darkorange"
-    color_4_comp_cp = "indigo"
+    color_4_comp_cp = "orchid"
 
     # answer rate graphs
     NUM_QUESTIONS = 13
@@ -148,9 +152,9 @@ if __name__ == "__main__":
                 y_values_cp.append(correctly_predicted/QUESTIONS_TOTAL*100)
                 # print(f"Prompt: {prompt}, Dataset: {dataset}, Config: {config}, Correct Format Answer Rate: {predictions_correct_format/QUESTIONS_TOTAL*100}%")
         ag_save_path = f"./{MODEL}_{prompt}_answer_rate.png"
-        plot_data(x_labels_ag, y_values_ag, f"Correct Format Answer Rate", "Dataset-Config", "Percentage", 100, colors_ag, [color_3_comp_ag, color_4_comp_ag], legend, note=f"Prompt: {prompt}\nModel: {MODEL}", save_path=ag_save_path)
+        plot_data(x_labels_ag, y_values_ag, f"Correct Format Answer Rate", "Config", "Percentage", 100, colors_ag, [color_3_comp_ag, color_4_comp_ag], legend, note=f"Prompt: {prompt}\nModel: {MODEL}", save_path=ag_save_path)
 
         cp_save_path = f"./{MODEL}_{prompt}_correct_prediction.png"
-        plot_data(x_labels_cp, y_values_cp, f"Correct Prediction Rate", "Dataset-Config", "Percentage", 100, colors_cp, [color_3_comp_cp, color_4_comp_cp], legend, note=f"Prompt: {prompt}\nModel: {MODEL}", save_path=cp_save_path)
+        plot_data(x_labels_cp, y_values_cp, f"Correct Prediction Rate", "Config", "Percentage", 100, colors_cp, [color_3_comp_cp, color_4_comp_cp], legend, note=f"Prompt: {prompt}\nModel: {MODEL}", save_path=cp_save_path)
         print(f"Saved {ag_save_path} and {cp_save_path}")
 
