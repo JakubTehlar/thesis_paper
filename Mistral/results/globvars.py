@@ -1,7 +1,7 @@
 MODELS=["pixtral-12b-2409",
                             ]
 PROMPTS=["default_prompt",
-         "ft_prompt",
+         "ft_prompt"
                             ]
 DATASETS=["3_comp",
          "4_comp"
