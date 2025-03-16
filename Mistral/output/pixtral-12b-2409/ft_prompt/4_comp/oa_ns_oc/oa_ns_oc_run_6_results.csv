@@ -1,452 +1,456 @@
 index,image_path,correct_answer,prediction,correct,answer
-0,Datasets/4_comp/output_data/oa_ns_oc_distribute_nine_RAVEN_9938_test.png,G,C,False,"To solve this puzzle, we need to analyze the patterns in the 3x3 grid and determine how the shapes are arranged. Here are the steps to identify the correct pattern:
-
-1. **Identify the Shapes**: The shapes in the grid include circles, squares, triangles, and hexagons. These shapes are arranged in a specific pattern.
-
-2. **Analyze the Rows**:
-   - Row 1: Circle, Square, Triangle
-   - Row 2: Square, Triangle, Hexagon
-   - Row 3: Triangle, Hexagon, Circle
-
-3. **Analyze the Columns**:
-   - Column 1: Circle, Square, Triangle
-   - Column 2: Square, Triangle, Hexagon
-   - Column 3: Triangle, Hexagon, Circle
-
-4. **Analyze the Diagonals**:
-   - Diagonal 1 (top-left to bottom-right): Circle, Square, Hexagon
-   - Diagonal 2 (top-right to bottom-left): Triangle, Hexagon, Circle
-
-5. **Determine the Pattern**: The pattern appears to be a rotation of shapes. Each shape in the grid is rotated 90 degrees clockwise from the shape above it in the same column.
-
-6. **Identify the Empty Box**: The empty box is in the bottom row, third column.
-
-7. **Determine the Shape for the Empty Box**: The shape above the empty box in the third column is a hexagon. Rotating a hexagon 90 degrees clockwise gives us a triangle.
-
-8. **Verify the Pattern**: The pattern holds true for all rows, columns, and diagonals.
-
-Therefore, the correct answer is a triangle.
-
-The correct answer is: C"
-1,Datasets/4_comp/output_data/oa_ns_oc_in_distribute_four_out_center_single_RAVEN_9861_train.png,G,**A**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
-
-1. Top-left triangle: contains a square, a triangle, and a diamond.
-2. Top-middle triangle: contains a square, a triangle, and a diamond.
-3. Top-right triangle: contains a square, a triangle, and a diamond.
-4. Middle-left triangle: contains a square, a triangle, and a diamond.
-5. Middle-middle triangle: contains a square, a triangle, and a diamond.
-6. Middle-right triangle: contains a square, a triangle, and a diamond.
-7. Bottom-left circle: contains a square, a triangle, and a diamond.
-8. Bottom-middle circle: contains a square, a triangle, and a diamond.
-9. Bottom-right box: empty (marked with a question mark).
-
-Next, let's examine the options A to F:
-
-- **A**: Contains a square, a triangle, and a diamond.
-- **B**: Contains a square, a triangle, and a diamond.
-- **C**: Contains a square, a triangle, and a diamond.
-- **D**: Contains a square, a triangle, and a diamond.
-- **E**: Contains a square, a triangle, and a diamond.
-- **F**: Contains a square, a triangle, and a diamond.
-
-Upon closer inspection, it appears that all the shapes in the grid contain the same set of figures: a square, a triangle, and a diamond. Therefore, the pattern is consistent across all shapes, and any of the options A to F can be placed in the empty box.
-
-The correct answer is: **A**."
-2,Datasets/4_comp/output_data/oa_ns_oc_distribute_four_RAVEN_9924_train.png,G,F,False,"To solve this puzzle, we need to analyze the pattern in the grid. The shapes in the grid are circles, pentagons, and triangles, and they vary in shading (black, gray, and white).
-
-Let's break down the pattern:
-
-1. **Rows Analysis**:
-   - First Row: Circle (black), Pentagon (gray), Triangle (black)
-   - Second Row: Circle (black), Pentagon (gray), Triangle (black)
-   - Third Row: Circle (black), Pentagon (gray), Triangle (black)
-
-2. **Columns Analysis**:
-   - First Column: Circle (black), Circle (black), Circle (black)
-   - Second Column: Pentagon (gray), Pentagon (gray), Pentagon (gray)
-   - Third Column: Triangle (black), Triangle (black), Triangle (black)
-
-3. **Diagonal Analysis**:
-   - First Diagonal: Circle (black), Pentagon (gray), Triangle (black)
-   - Second Diagonal: Circle (black), Pentagon (gray), Triangle (black)
-
-From the above analysis, we can see that the pattern alternates between shapes in each row and column. The empty box is in the third row and third column. The shapes in the third row are Circle (black), Pentagon (gray), and Triangle (black). The shapes in the third column are Circle (black), Pentagon (gray), and Triangle (black).
-
-Given this pattern, the shape that fits in the empty box should be consistent with the pattern observed. The third row and third column both have a Triangle (black) in the last position.
-
-Therefore, the correct answer is a Triangle (black).
-
-The correct answer is: F"
-3,Datasets/4_comp/output_data/oa_ns_oc_distribute_four_RAVEN_9930_train.png,B,"**F**
-",False,"To solve this puzzle, we need to identify the pattern that connects all the shapes in the grid. Let's analyze the shapes in each column and row:
-
-1. **First Column (A)**:
-   - Shapes: Square, Small Diamond, Small Diamond
-   - Observation: The shapes are different in each row.
-
-2. **Second Column (B)**:
-   - Shapes: Large Diamond, Large Diamond, Large Diamond
-   - Observation: The shapes are the same in each row.
-
-3. **Third Column (C)**:
-   - Shapes: Large Diamond, Small Diamond, Large Diamond
-   - Observation: The shapes alternate between Large Diamond and Small Diamond.
-
-4. **Fourth Column (D)**:
-   - Shapes: Circle, Circle, Circle
-   - Observation: The shapes are the same in each row.
-
-5. **Fifth Column (E)**:
-   - Shapes: Circle, Circle, Circle
-   - Observation: The shapes are the same in each row.
-
-6. **Sixth Column (F)**:
-   - Shapes: Circle, Circle, Large Diamond
-   - Observation: The shapes are the same in the first two rows and different in the third row.
-
-7. **Seventh Column (G)**:
-   - Shapes: Square, Large Diamond, Large Diamond
-   - Observation: The shapes alternate between Square and Large Diamond.
-
-8. **Eighth Column (H)**:
-   - Shapes: Small Diamond, Small Diamond, Small Diamond
-   - Observation: The shapes are the same in each row.
-
-Now, let's look at the rows:
-
-1. **First Row**:
-   - Shapes: Square, Large Diamond, Circle, Circle, Circle, Large Diamond, Large Diamond, Large Diamond, Small Diamond
-   - Observation: The shapes alternate between different types.
-
-2. **Second Row**:
-   - Shapes: Small Diamond, Large Diamond, Circle, Circle, Circle, Large Diamond, Large Diamond, Large Diamond, Small Diamond
-   - Observation: The shapes alternate between different types.
-
-3. **Third Row**:
-   - Shapes: Large Diamond, Large Diamond, Circle, Circle, Large Diamond, Large Diamond, Large Diamond, Large Diamond, Small Diamond
-   - Observation: The shapes alternate between different types.
-
-From the above observations, we can see that the pattern alternates between different shapes in each row and column. The empty box in the third row and third column needs to follow this pattern.
-
-Given the options (A to F), we need to find a shape that fits the alternating pattern. The correct answer should be a Large Diamond, as it alternates with the Circle in the third row and third column.
-
-The correct answer is: **F**
-"
-4,Datasets/4_comp/output_data/oa_ns_oc_center_single_RAVEN_9942_train.png,A,E,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes step-by-step:
-
-1. **Identify the shapes in the grid:**
-   - Top row: Circle, Pentagon, Small Circle
-   - Middle row: Triangle, Small Pentagon, Cross
-   - Bottom row: Large Circle, Small Triangle, Large Triangle
-
-2. **Determine the pattern:**
-   - The shapes alternate between filled and empty.
-   - The shapes alternate between different shapes and sizes.
-
-3. **Analyze the pattern in the rows:**
-   - Top row: Circle, Pentagon, Small Circle
-   - Middle row: Triangle, Small Pentagon, Cross
-   - Bottom row: Large Circle, Small Triangle, Large Triangle
-
-4. **Identify the pattern in the columns:**
-   - First column: Circle, Triangle, Large Circle
-   - Second column: Pentagon, Small Pentagon, Small Triangle
-   - Third column: Small Circle, Cross, Large Triangle
-
-5. **Identify the pattern in the diagonals:**
-   - Diagonal (top-left to bottom-right): Circle, Small Pentagon, Large Circle
-   - Diagonal (top-right to bottom-left): Pentagon, Small Triangle, Large Triangle
-
-6. **Determine the missing shape:**
-   - The empty box is in the middle row, third column.
-   - The shape in the middle row, third column should be a Large Circle.
-
-Therefore, the correct answer is:
-
-The correct answer is: E"
-5,Datasets/4_comp/output_data/oa_ns_oc_in_distribute_four_out_center_single_RAVEN_9856_val.png,H,**C**.,False,"To solve this intelligence test question, we need to analyze the patterns in the shapes and their positions within the grid. Let's break down the elements:
-
-1. **Top Row**: The shapes are a pentagon, a pentagon with a star inside, and a pentagon with a square inside.
-2. **Middle Row**: The shapes are a circle with a star inside, a circle with a diamond inside, and a circle with a square inside.
-3. **Bottom Row**: The shapes are a diamond with two squares inside, a diamond with three circles inside, and an empty diamond with a cross mark.
-
-The pattern seems to involve different shapes and their internal contents. We need to identify a consistent rule or transformation that applies to the shapes and their internal elements.
-
-Let's examine the options A to F:
-
-- **A**: Diamond with three circles inside.
-- **B**: Diamond with one circle inside.
-- **C**: Diamond with three circles inside.
-- **D**: Diamond with three circles inside.
-- **E**: Diamond with one square inside.
-- **F**: Diamond with one circle inside.
-
-Given the pattern, the empty box should follow the rule of having a diamond shape with three circles inside, as seen in the second row, third column.
-
-The correct answer is: **C**."
-6,Datasets/4_comp/output_data/oa_ns_oc_center_single_RAVEN_9939_test.png,D,"D.
-",False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in the grid:
-
-1. Top row: pentagon, diamond, triangle
-2. Middle row: pentagon, pentagon, diamond
-3. Bottom row: circle, pentagon, cross
-
-Next, we examine the options provided:
-
-A. Dark circle
-B. Light circle
-C. Dark circle
-D. Light pentagon
-E. Dark pentagon
-F. Light pentagon
-
-We need to determine the pattern that relates the shapes in the grid to the options. One possible pattern could be the alternation of shapes by their color and type.
-
-Let's analyze the pattern:
-
-- The top row has a pentagon, diamond, and triangle.
-- The middle row has two pentagons and a diamond.
-- The bottom row has a circle, pentagon, and cross.
-
-Considering the options:
-
-- A (Dark circle) does not appear in the grid.
-- B (Light circle) does not appear in the grid.
-- C (Dark circle) does not appear in the grid.
-- D (Light pentagon) appears in the middle row.
-- E (Dark pentagon) appears in the middle row.
-- F (Light pentagon) appears in the middle row.
-
-Given the pattern, the correct answer should be a pentagon that matches the ones in the middle row. Therefore, the correct answer is a light pentagon (D).
-
-The correct answer is: D.
-"
-7,Datasets/4_comp/output_data/oa_ns_oc_in_center_single_out_center_single_RAVEN_9910_train.png,E,B,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes in each box:
-
-1. Top row: Hexagon, Square, Pentagon
-2. Middle row: Square, Hexagon, Hexagon
-3. Bottom row: Pentagon, Hexagon, Square
-
-Next, let's examine the shapes inside each box:
-
-1. Top row: Triangle, Pentagon, Diamond
-2. Middle row: Pentagon, Pentagon, Pentagon
-3. Bottom row: Diamond, Diamond, Diamond
-
-Now, let's look at the shapes in the circles at the bottom:
-
-1. A: Circle inside a Circle
-2. B: Filled Circle inside a Circle
-3. C: Diamond inside a Circle
-4. D: Circle inside a Square
-5. E: Diamond inside a Square
-6. F: Filled Circle inside a Square
-
-To determine the pattern, we need to see how the shapes inside the boxes relate to the shapes in the circles. The shapes inside the boxes are consistent in the middle row (all are pentagons), suggesting a pattern based on the shape inside the boxes.
-
-Given this, we need to find a shape in the circles that matches the pattern of the shapes inside the boxes. The middle row has pentagons, so we should look for a shape in the circles that corresponds to a pentagon inside the boxes.
-
-The shape in the circles that corresponds to a pentagon inside the boxes is a filled circle (B).
-
-Therefore, the correct answer is:
-
-The correct answer is: B"
-8,Datasets/4_comp/output_data/oa_ns_oc_up_center_single_down_center_single_RAVEN_9957_val.png,C,**A**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
-
-### Top Row:
-- Shape 1: Pentagon (solid)
-- Shape 2: Triangle (solid)
-- Shape 3: Square (solid)
-
-### Middle Row:
-- Shape 1: Square (solid)
-- Shape 2: Pentagon (solid)
-- Shape 3: Triangle (solid, pointing down)
-
-### Bottom Row:
-- Shape 1: Triangle (solid, pointing down)
-- Shape 2: Pentagon (solid)
-- Shape 3: Pentagon (solid)
-
-### Analysis:
-1. **Shape Transformation:**
-   - The shapes transform from one form to another in a specific sequence.
-   - Pentagon to Square to Triangle (downward) to Pentagon to Triangle (downward).
-
-2. **Color Transformation:**
-   - The shapes change in color from solid to gray.
-
-### Pattern:
-- The pattern involves changing the shape and color in a specific sequence.
-
-### Applying the Pattern:
-- Starting from the top left (Pentagon, solid), the sequence is:
-  - Pentagon (solid) → Square (solid) → Triangle (downward, solid) → Pentagon (solid) → Triangle (downward, solid) → Pentagon (solid) → Triangle (downward, solid) → Pentagon (solid) → Triangle (downward, solid) → Pentagon (solid).
-
-### Conclusion:
-- The shape that fits the pattern for the empty box is a Pentagon (solid).
-
-The correct answer is: **A**"
-9,Datasets/4_comp/output_data/oa_ns_oc_up_center_single_down_center_single_RAVEN_9959_test.png,H,**C**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes row by row.
-
-### Row 1:
-- Shape 1: Small black pentagon
-- Shape 2: Small black hexagon
-- Shape 3: Small black triangle
-
-### Row 2:
-- Shape 1: Medium black hexagon
-- Shape 2: Medium gray hexagon
-- Shape 3: Medium black pentagon
-
-### Row 3:
-- Shape 1: Large black hexagon
-- Shape 2: Large gray hexagon
-- Shape 3: Large black pentagon
-
-### Empty Box:
-- The empty box is in the third row, second column.
-
-### Analysis:
-1. **Shape Transformation**:
-   - From Row 1 to Row 2:
-     - Small black pentagon to medium black hexagon
-     - Small black hexagon to medium gray hexagon
-     - Small black triangle to medium black pentagon
-   - From Row 2 to Row 3:
-     - Medium black hexagon to large black hexagon
-     - Medium gray hexagon to large gray hexagon
-     - Medium black pentagon to large black pentagon
-
-2. **Color Transformation**:
-   - From Row 1 to Row 2:
-     - Small black pentagon to medium black hexagon (color remains black)
-     - Small black hexagon to medium gray hexagon (color changes to gray)
-     - Small black triangle to medium black pentagon (color remains black)
-   - From Row 2 to Row 3:
-     - Medium black hexagon to large black hexagon (color remains black)
-     - Medium gray hexagon to large gray hexagon (color remains gray)
-     - Medium black pentagon to large black pentagon (color remains black)
-
-3. **Shape Size Transformation**:
-   - From Row 1 to Row 2:
-     - Small to medium
-   - From Row 2 to Row 3:
-     - Medium to large
-
-### Conclusion:
-The pattern involves transforming the shape from small to medium to large, and the color changes from black to gray to black. The shape in the empty box should be a large gray hexagon.
-
-The correct answer is: **C**"
-10,Datasets/4_comp/output_data/oa_ns_oc_in_center_single_out_center_single_RAVEN_9952_train.png,G,**C**,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the 3x3 grid. Let's analyze the shapes step-by-step:
-
-1. **Identify the shapes in the grid:**
-   - Top row: Triangle with a circle, Circle with a hexagon, Square with a pentagon
-   - Middle row: Circle with a black hexagon, Diamond with a gray square, Triangle with a gray triangle
-   - Bottom row: Diamond with a circle, Triangle with a gray triangle, Triangle with a black pentagon
-
-2. **Determine the pattern:**
-   - The shapes in the grid are varied, including triangles, circles, diamonds, and squares.
-   - The inner shapes are different geometric figures like circles, squares, pentagons, and hexagons.
-   - The outer shapes are also varied, including triangles, diamonds, and squares.
-
-3. **Analyze the options:**
-   - A: Triangle with a gray square
-   - B: Triangle with a gray triangle
-   - C: Triangle with a circle
-   - D: Circle with a gray triangle
-   - E: Circle with a gray triangle
-   - F: Circle with a gray triangle
-
-4. **Match the pattern:**
-   - The pattern seems to involve triangles with different inner shapes.
-   - Options A, B, and C are triangles with different inner shapes.
-   - Options D, E, and F are circles with the same inner shape (gray triangle).
-
-Given the pattern of triangles with different inner shapes, the correct answer should be a triangle with an inner shape that fits the pattern.
-
-The correct answer is: **C**"
-11,Datasets/4_comp/output_data/oa_ns_oc_left_center_single_right_center_single_RAVEN_9958_test.png,H,**C**.,False,"To solve this puzzle, we need to identify the pattern that connects the shapes in the grid. Let's analyze the shapes in each row and column.
+0,Datasets/4_comp/output_data/oa_ns_oc_distribute_nine_RAVEN_9938_test.png,G,**F**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape for the empty box marked with an 'x'.
 
 ### Step-by-Step Analysis:
 
-1. **First Row:**
-   - Shapes: Circle, Triangle, Pentagon, Triangle, Pentagon, Pentagon, Triangle, Pentagon, Triangle
-   - Observation: The shapes alternate between circles, triangles, and pentagons.
+1. **Observe the Changes Across Rows, Columns, and Diagonals:**
+   - **First Row:** The shapes vary in type and size but do not seem to follow a clear pattern.
+   - **Second Row:** The shapes are more consistent in type but vary in size and shading.
+   - **Third Row:** The shapes are more varied in type and size, with some consistent shading.
 
-2. **Second Row:**
-   - Shapes: Circle, Triangle, Pentagon, Pentagon, Pentagon, Pentagon, Triangle, Pentagon, Triangle
-   - Observation: The shapes alternate between circles, triangles, and pentagons.
+2. **Look for Common Pattern Types:**
+   - **Shape Types:** The shapes include circles, squares, triangles, hexagons, and diamonds.
+   - **Shading:** Some shapes are shaded, while others are not.
+   - **Size:** The shapes vary in size.
 
-3. **Third Row:**
-   - Shapes: Circle, Triangle, Pentagon, Pentagon, Pentagon, Pentagon, Triangle, Pentagon, Triangle
-   - Observation: The shapes alternate between circles, triangles, and pentagons.
+3. **Identify Unique Features:**
+   - The shapes in the second row are more consistent in type (predominantly circles and squares).
+   - The second row has a mix of shaded and unshaded shapes.
 
-4. **First Column:**
-   - Shapes: Circle, Circle, Circle
-   - Observation: The shapes are all circles.
-
-5. **Second Column:**
-   - Shapes: Triangle, Triangle, Triangle
-   - Observation: The shapes are all triangles.
-
-6. **Third Column:**
-   - Shapes: Pentagon, Pentagon, Pentagon
-   - Observation: The shapes are all pentagons.
-
-7. **Fourth Column:**
-   - Shapes: Triangle, Pentagon, Triangle
-   - Observation: The shapes alternate between triangles and pentagons.
-
-8. **Fifth Column:**
-   - Shapes: Pentagon, Pentagon, Pentagon
-   - Observation: The shapes are all pentagons.
-
-9. **Sixth Column:**
-   - Shapes: Triangle, Pentagon, Triangle
-   - Observation: The shapes alternate between triangles and pentagons.
-
-10. **Seventh Column:**
-    - Shapes: Pentagon, Pentagon, Pentagon
-    - Observation: The shapes are all pentagons.
-
-11. **Eighth Column:**
-    - Shapes: Triangle, Pentagon, Triangle
-    - Observation: The shapes alternate between triangles and pentagons.
-
-12. **Ninth Column:**
-    - Shapes: Pentagon, Pentagon, Pentagon
-    - Observation: The shapes are all pentagons.
+4. **Eliminate Options:**
+   - **Option A:** Contains only circles and squares, but the sizes and shading do not match the pattern.
+   - **Option B:** Contains only circles and squares, but the shading is inconsistent.
+   - **Option C:** Contains a mix of shapes, but the pattern does not match the second row.
+   - **Option D:** Contains a mix of shapes, but the pattern does not match the second row.
+   - **Option E:** Contains a mix of shapes, but the pattern does not match the second row.
+   - **Option F:** Contains a mix of shapes, but the pattern does not match the second row.
+   - **Option G:** Contains a mix of shapes, but the pattern does not match the second row.
+   - **Option H:** Contains a mix of shapes, but the pattern does not match the second row.
 
 ### Conclusion:
-The pattern alternates between circles, triangles, and pentagons in each row and column. The empty box is in the third row and the seventh column. According to the pattern, the shape in the seventh column should be a pentagon.
+Based on the analysis, the correct answer should match the pattern observed in the second row, which predominantly contains circles and squares with a mix of shading.
 
-The correct answer is: **C**."
-12,Datasets/4_comp/output_data/oa_ns_oc_distribute_nine_RAVEN_9940_train.png,G,"C
-",False,"To solve this puzzle, we need to analyze the pattern in the 3x3 grid and match it with the given options. Here is the grid:
+The correct answer is: **F**."
+1,Datasets/4_comp/output_data/oa_ns_oc_in_distribute_four_out_center_single_RAVEN_9861_train.png,G,H.**,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes within the 3x3 grid. Let's break down the steps:
 
-```
-▲    *    *   
-▲    *    *   
-▲    *    *
-```
+1. **Observe the Changes Across Each Row, Column, and Diagonals:**
+   - **First Row:** The shapes change from having multiple elements to fewer elements, and the shapes themselves change from triangles to circles.
+   - **Second Row:** The shapes change from having multiple elements to fewer elements, and the shapes themselves change from triangles to circles.
+   - **Third Row:** The shapes change from having multiple elements to fewer elements, and the shapes themselves change from triangles to circles.
 
-The empty box is marked with a question mark (?).
+2. **Look for Common Pattern Types:**
+   - The shapes seem to be simplifying from left to right.
+   - The shapes are transitioning from triangles to circles.
+   - The number of elements within the shapes decreases from left to right.
 
-Let's examine the shapes in the grid:
-- The top row has three different shapes: a triangle (▲), a pentagon (*), and a circle (o).
-- The second row has the same shapes: a triangle (▲), a pentagon (*), and a circle (o).
-- The third row has the same shapes: a triangle (▲), a pentagon (*), and a circle (o).
+3. **Identify Unique Features in the Shapes:**
+   - The first column has shapes with multiple elements.
+   - The second column has shapes with fewer elements.
+   - The third column has shapes with a single element.
 
-Now, let's look at the options:
-- A: Light gray circle (o)
-- B: Dark gray circle (o)
-- C: Light gray circle (o)
-- D: Dark gray circle (o) and light gray circle (o)
-- E: Dark gray circle (o) and dark gray circle (o)
-- F: Light gray circle (o) and dark gray circle (o)
+4. **Eliminate Options (A to H) That Clearly Do Not Match the Observed Patterns:**
+   - **A:** This shape has multiple elements, which does not match the pattern of simplification.
+   - **B:** This shape has multiple elements, which does not match the pattern of simplification.
+   - **C:** This shape has multiple elements, which does not match the pattern of simplification.
+   - **D:** This shape has multiple elements, which does not match the pattern of simplification.
+   - **E:** This shape has multiple elements, which does not match the pattern of simplification.
+   - **F:** This shape has multiple elements, which does not match the pattern of simplification.
+   - **G:** This shape has multiple elements, which does not match the pattern of simplification.
+   - **H:** This shape has multiple elements, which does not match the pattern of simplification.
 
-The pattern in the grid alternates between the triangle (▲), pentagon (*), and circle (o). The empty box is in the third column, which has a circle (o) in the first and second rows. Therefore, the shape that should fill the empty box must be a circle (o).
+5. **Select the Correct Shape That Completes the Pattern:**
+   - The correct answer should have a single element, matching the pattern of simplification from multiple elements to a single element.
 
+Based on the observed patterns, the correct answer is:
+
+**The correct answer is: H.**"
+2,Datasets/4_comp/output_data/oa_ns_oc_distribute_four_RAVEN_9924_train.png,G,H.**,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the matrix. Here are the steps to deduce the correct answer:
+
+1. **Observe the Changes Across Rows and Columns:**
+   - **First Row:** The shapes vary in size and shape, including circles, pentagons, and triangles. There is no clear pattern in terms of shape transformation.
+   - **Second Row:** Similar to the first row, the shapes vary in size and shape.
+   - **Third Row:** Again, the shapes vary in size and shape.
+
+2. **Look for Common Pattern Types:**
+   - **Rotation:** There doesn't seem to be a consistent rotation pattern.
+   - **Mirroring:** There is no clear mirroring pattern.
+   - **Color Shades:** The shades of gray do not follow a consistent pattern.
+   - **Element Counting:** The number of shapes or elements does not follow a consistent pattern.
+
+3. **Identify Unique Features:**
+   - The shapes are varied and do not follow a consistent pattern in terms of shape, size, or color.
+
+4. **Eliminate Options:**
+   - Options A, B, C, D, E, F, G, and H all show different shapes and sizes. Since there is no clear pattern, we need to look at the options provided to find a match.
+
+5. **Select the Correct Shape:**
+   - Given the lack of a clear pattern, we need to choose the option that best fits the random distribution of shapes in the matrix.
+
+Based on the analysis, the correct answer is:
+
+**The correct answer is: H.**"
+3,Datasets/4_comp/output_data/oa_ns_oc_distribute_four_RAVEN_9930_train.png,B,**E**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the matrix and deduce the correct shape for the empty box marked with an 'x'.
+
+### Step-by-Step Analysis:
+
+1. **Observe the Changes Across Rows:**
+   - **First Row:** The shapes vary in size and type, including circles, squares, and pentagons.
+   - **Second Row:** Similar to the first row, shapes vary in size and type.
+   - **Third Row:** Again, shapes vary in size and type.
+
+2. **Observe the Changes Across Columns:**
+   - **First Column:** The shapes are small and include a circle, square, and pentagon.
+   - **Second Column:** The shapes are larger and include a square, diamond, and pentagon.
+   - **Third Column:** The shapes are larger and include a circle, square, and pentagon.
+
+3. **Observe the Diagonals:**
+   - **First Diagonal:** The shapes include a circle, square, and pentagon.
+   - **Second Diagonal:** The shapes include a circle, square, and pentagon.
+
+4. **Identify Unique Features:**
+   - The shapes vary in size and type.
+   - There is no consistent rotation or mirroring pattern.
+   - The shapes seem to be randomly placed without a clear transformation rule.
+
+5. **Eliminate Options:**
+   - **Option A:** Contains small shapes, which do not match the larger shapes in the matrix.
+   - **Option B:** Contains small shapes, which do not match the larger shapes in the matrix.
+   - **Option C:** Contains a mix of shapes, but the sizes do not match the larger shapes in the matrix.
+   - **Option D:** Contains a mix of shapes, but the sizes do not match the larger shapes in the matrix.
+   - **Option E:** Contains larger circles, which match the larger shapes in the matrix.
+   - **Option F:** Contains larger circles, which match the larger shapes in the matrix.
+   - **Option G:** Contains larger squares, which match the larger shapes in the matrix.
+   - **Option H:** Contains small shapes, which do not match the larger shapes in the matrix.
+
+### Conclusion:
+Based on the analysis, the correct answer is one of the options that contains larger shapes, specifically circles or squares.
+
+The correct answer is: **E**."
+4,Datasets/4_comp/output_data/oa_ns_oc_center_single_RAVEN_9942_train.png,A,**F**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the shapes provided in the 3x3 grid. Let's break down the steps:
+
+1. **Observation of the Grid:**
+   - The grid contains various shapes: triangles, pentagons, and circles.
+   - The shapes vary in color shades and orientation.
+
+2. **Identifying Patterns:**
+   - **Rows:**
+     - First Row: Triangles and pentagons in different shades.
+     - Second Row: Triangles and pentagons in different shades.
+     - Third Row: Triangles and pentagons in different shades.
+   - **Columns:**
+     - First Column: Triangles in different shades.
+     - Second Column: Triangles and pentagons in different shades.
+     - Third Column: Triangles and pentagons in different shades.
+   - **Diagonals:**
+     - Top-left to bottom-right: Triangles in different shades.
+     - Top-right to bottom-left: Triangles in different shades.
+
+3. **Common Pattern Types:**
+   - **Rotation:** Shapes might be rotating.
+   - **Color Shades:** Shapes might be changing in color shades.
+   - **Shape Counting:** The number of shapes might be changing.
+
+4. **Unique Features:**
+   - The shapes are primarily triangles and pentagons.
+   - The color shades vary from light to dark.
+
+5. **Eliminating Options:**
+   - **A:** A large circle, which does not fit the pattern of triangles and pentagons.
+   - **B:** A small triangle, which fits the pattern but needs further verification.
+   - **C:** A small pentagon, which fits the pattern but needs further verification.
+   - **D:** A small circle, which does not fit the pattern of triangles and pentagons.
+   - **E:** A large circle, which does not fit the pattern of triangles and pentagons.
+   - **F:** A large triangle, which fits the pattern but needs further verification.
+   - **G:** A small circle, which does not fit the pattern of triangles and pentagons.
+   - **H:** A large triangle, which fits the pattern but needs further verification.
+
+6. **Verification:**
+   - The pattern seems to involve rotating triangles and pentagons.
+   - The color shades might be increasing in darkness.
+   - Given the options, the most fitting shapes are triangles and pentagons.
+
+7. **Conclusion:**
+   - The correct answer should be a triangle or pentagon that fits the rotation and color pattern.
+
+The correct answer is: **F**."
+5,Datasets/4_comp/output_data/oa_ns_oc_in_distribute_four_out_center_single_RAVEN_9856_val.png,H,D.**,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that fits in the bottom-right box. Let's break down the steps:
+
+1. **Observe the Changes Across Each Row, Column, and Diagonals:**
+   - **First Row:** The shapes are a pentagon, a pentagon with a star, and a pentagon with a square.
+   - **Second Row:** The shapes are a circle with a star, a circle with a diamond, and a circle with a square.
+   - **Third Row:** The shapes are a diamond with two squares, a diamond with three circles, and an 'X'.
+
+2. **Look for Common Pattern Types:**
+   - The shapes within the pentagons and circles do not seem to follow a consistent pattern.
+   - The shapes within the diamonds show a pattern of shapes: two squares, three circles, and an 'X'.
+
+3. **Identify Unique Features in the Shapes:**
+   - The shapes within the diamonds are geometric figures (squares, circles, and 'X').
+
+4. **Eliminate Options (A to H) That Clearly Do Not Match the Observed Patterns:**
+   - Options A, C, D, E, F, G, and H contain more than three shapes within the diamond.
+   - Option B contains only one shape within the diamond.
+
+5. **Select the Correct Shape:**
+   - The pattern in the diamonds shows two shapes in the first diamond, three shapes in the second diamond, and an 'X' in the third diamond.
+   - The correct shape should follow this pattern.
+
+Given the pattern observed, the correct answer should be a diamond with three shapes.
+
+**The correct answer is: D.**"
+6,Datasets/4_comp/output_data/oa_ns_oc_center_single_RAVEN_9939_test.png,D,B.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes. Here are the steps to deduce the correct answer:
+
+1. **Observe the Changes Across Rows:**
+   - First Row: The shapes are a pentagon, a diamond, and a triangle.
+   - Second Row: The shapes are a pentagon, a pentagon, and a diamond.
+   - Third Row: The shapes are a circle, a pentagon, and an 'X'.
+
+2. **Observe the Changes Across Columns:**
+   - First Column: The shapes are a pentagon, a pentagon, and a circle.
+   - Second Column: The shapes are a diamond, a pentagon, and a pentagon.
+   - Third Column: The shapes are a triangle, a diamond, and an 'X'.
+
+3. **Observe the Changes Across Diagonals:**
+   - Main Diagonal (top-left to bottom-right): The shapes are a pentagon, a pentagon, and an 'X'.
+   - Secondary Diagonal (top-right to bottom-left): The shapes are a triangle, a diamond, and a circle.
+
+4. **Identify Patterns:**
+   - There is no clear rotation, mirroring, or color shift pattern.
+   - The shapes seem to vary without a consistent transformation.
+
+5. **Eliminate Options:**
+   - Options A, B, C, and H are circles or pentagons, which do not match the diamond or 'X' in the grid.
+   - Options D, E, and F are pentagons, which do not match the diamond or 'X' in the grid.
+   - Option G is a circle, which does not match the diamond or 'X' in the grid.
+
+6. **Select the Correct Shape:**
+   - The only shape that matches the diamond in the grid is option B.
+
+**Conclusion:**
+The correct answer is: B."
+7,Datasets/4_comp/output_data/oa_ns_oc_in_center_single_out_center_single_RAVEN_9910_train.png,E,**H**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes. Here are the steps to deduce the correct answer:
+
+1. **Observe the Changes Across Rows:**
+   - First Row: The shapes are a hexagon, square, and pentagon, each containing a triangle.
+   - Second Row: The shapes are a square, hexagon, and pentagon, each containing a pentagon.
+   - Third Row: The shapes are a pentagon, hexagon, and a crossed-out hexagon, each containing a diamond.
+
+2. **Observe the Changes Across Columns:**
+   - First Column: The shapes are a hexagon, square, and pentagon, each containing a triangle, pentagon, and diamond respectively.
+   - Second Column: The shapes are a square, hexagon, and pentagon, each containing a pentagon, triangle, and diamond respectively.
+   - Third Column: The shapes are a pentagon, hexagon, and a crossed-out hexagon, each containing a diamond.
+
+3. **Observe the Changes Across Diagonals:**
+   - Top-left to Bottom-right: The shapes are a hexagon, square, and pentagon, each containing a triangle, pentagon, and diamond respectively.
+   - Top-right to Bottom-left: The shapes are a pentagon, hexagon, and a crossed-out hexagon, each containing a diamond.
+
+4. **Identify the Pattern:**
+   - The shapes in the grid are changing from left to right and top to bottom.
+   - The shapes within the larger shapes are also changing in a specific sequence: triangle, pentagon, diamond.
+
+5. **Eliminate Options:**
+   - Options A, B, and F do not match the pattern of shapes within the larger shapes.
+   - Options D and E do not match the pattern of the larger shapes.
+   - Option G does not match the pattern of the shapes within the larger shapes.
+
+6. **Select the Correct Answer:**
+   - The correct answer should match the pattern of the shapes within the larger shapes and the larger shapes themselves.
+   - The correct answer is Option H, which is a square containing a diamond.
+
+### Conclusion:
+The correct answer is: **H**."
+8,Datasets/4_comp/output_data/oa_ns_oc_up_center_single_down_center_single_RAVEN_9957_val.png,C,H.**,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that should be placed in the empty box at the bottom right.
+
+### Step-by-Step Analysis:
+
+1. **Observe the Changes Across Rows:**
+   - **First Row:** The shapes change from a pentagon to a triangle to a square.
+   - **Second Row:** The shapes change from a filled square to an empty square to a filled triangle.
+   - **Third Row:** The shapes change from a filled triangle to an empty triangle to a filled pentagon.
+
+2. **Observe the Changes Across Columns:**
+   - **First Column:** The shapes change from a pentagon to a filled square to a filled triangle.
+   - **Second Column:** The shapes change from a triangle to an empty square to an empty triangle.
+   - **Third Column:** The shapes change from a square to a filled triangle to a filled pentagon.
+
+3. **Observe the Changes Across Diagonals:**
+   - **Main Diagonal (Top Left to Bottom Right):** The shapes change from a pentagon to a filled square to a filled pentagon.
+   - **Secondary Diagonal (Top Right to Bottom Left):** The shapes change from a triangle to an empty square to a filled triangle.
+
+### Identify the Pattern:
+- **Shape Transformation:** The shapes seem to alternate between filled and empty forms.
+- **Shape Type:** The shapes alternate between pentagons, squares, and triangles.
+
+### Eliminate Incorrect Options:
+- **Option A:** Does not match the pattern of alternating shapes.
+- **Option B:** Does not match the pattern of alternating shapes.
+- **Option C:** Does not match the pattern of alternating shapes.
+- **Option D:** Does not match the pattern of alternating shapes.
+- **Option E:** Does not match the pattern of alternating shapes.
+- **Option F:** Does not match the pattern of alternating shapes.
+- **Option G:** Does not match the pattern of alternating shapes.
+- **Option H:** Matches the pattern of alternating shapes (pentagon, filled square, filled pentagon).
+
+### Conclusion:
+The correct answer is:
+
+**The correct answer is: H.**"
+9,Datasets/4_comp/output_data/oa_ns_oc_up_center_single_down_center_single_RAVEN_9959_test.png,H,"**C**
+
+```markdown
+",False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that should be placed in the empty box marked with an 'x'.
+
+### Step-by-Step Analysis:
+
+1. **Observe the Changes Across Rows:**
+   - **First Row:** The shapes vary in size and orientation. There is no clear pattern in terms of shape type or color.
+   - **Second Row:** The shapes are more consistent in terms of shape type (hexagons) but vary in size and color.
+   - **Third Row:** The shapes are again hexagons, but the size and color vary.
+
+2. **Observe the Changes Across Columns:**
+   - **First Column:** The shapes are hexagons, but they vary in size and color.
+   - **Second Column:** The shapes are hexagons, but they vary in size and color.
+   - **Third Column:** The shapes are hexagons, but they vary in size and color.
+
+3. **Observe the Diagonals:**
+   - **First Diagonal:** The shapes are hexagons, but they vary in size and color.
+   - **Second Diagonal:** The shapes are hexagons, but they vary in size and color.
+
+4. **Identify Unique Features:**
+   - All shapes in the grid are hexagons.
+   - The shapes vary in size and color.
+
+5. **Look for Common Pattern Types:**
+   - The primary pattern seems to be the consistent use of hexagons.
+   - The size and color of the hexagons vary, but this does not seem to follow a strict rule.
+
+6. **Eliminate Options:**
+   - Options that do not contain hexagons can be eliminated.
+   - Options that have shapes other than hexagons can be eliminated.
+
+### Conclusion:
+Given the analysis, the correct answer should be a hexagon that fits the pattern of the grid. The shapes vary in size and color, but the primary shape type remains consistent.
+
+The correct answer is: **C**
+
+```markdown
 The correct answer is: C
-"
+```"
+10,Datasets/4_comp/output_data/oa_ns_oc_in_center_single_out_center_single_RAVEN_9952_train.png,G,D.**,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid of shapes and determine the rule that governs the transformations from one shape to another. Let's break down the steps:
+
+1. **Observe the Changes Across Each Row, Column, and Diagonals:**
+   - **First Row:** Triangle with a circle → Circle with a hexagon → Square with a pentagon.
+   - **Second Row:** Circle with a black pentagon → Diamond with a gray square → Triangle with a gray triangle.
+   - **Third Row:** Diamond with a circle → Triangle with a black pentagon → Cross.
+
+2. **Identify Consistent Transformations:**
+   - **First Column:** Triangle → Circle → Diamond.
+   - **Second Column:** Circle → Diamond → Triangle.
+   - **Third Column:** Diamond → Triangle → Cross.
+   - **Diagonals:** No clear pattern.
+
+3. **Look for Common Pattern Types:**
+   - **Shape Changes:** The shapes change from triangles to circles to diamonds.
+   - **Color Shades:** The shapes include both black and gray elements.
+   - **Element Counting:** The number of elements within shapes varies.
+
+4. **Unique Features in the Shapes:**
+   - The shapes include different geometric figures (triangles, circles, diamonds, squares).
+   - The elements inside the shapes vary (circles, hexagons, pentagons, squares, triangles).
+
+5. **Eliminate Options:**
+   - **Option A:** Triangle with a gray square.
+   - **Option B:** Triangle with a gray triangle.
+   - **Option C:** Triangle with a small circle.
+   - **Option D:** Circle with a gray triangle.
+   - **Option E:** Circle with a small triangle.
+   - **Option F:** Circle with a small gray square.
+   - **Option G:** Circle with a gray pentagon.
+   - **Option H:** Triangle with a small triangle.
+
+   By examining the patterns, we can see that the correct answer should follow the transformation rule observed in the grid. The shapes in the grid transition from triangles to circles to diamonds, and the elements inside the shapes also change.
+
+6. **Select the Correct Shape:**
+   - The bottom-right box is empty and marked with a symbol 'x'. The pattern suggests that the shape should be a circle with a gray triangle inside.
+
+Therefore, the correct answer is:
+
+**The correct answer is: D.**"
+11,Datasets/4_comp/output_data/oa_ns_oc_left_center_single_right_center_single_RAVEN_9958_test.png,H,H.**,False,"To solve this IQ test question, let's analyze the given 3x3 grid and the options provided under the matrix labeled A to H.
+
+### Step-by-Step Analysis:
+
+1. **Observe the Changes Across Each Row, Column, and Diagonals:**
+   - **First Row:** The shapes change from a circle to a triangle to a hexagon.
+   - **Second Row:** The shapes change from a circle to a triangle to a hexagon.
+   - **Third Row:** The shapes change from a circle to a triangle to a hexagon.
+   - **First Column:** The shapes change from a circle to a triangle to a hexagon.
+   - **Second Column:** The shapes change from a circle to a triangle to a hexagon.
+   - **Third Column:** The shapes change from a circle to a triangle to a hexagon.
+   - **Diagonal (Top Left to Bottom Right):** The shapes change from a circle to a triangle to a hexagon.
+   - **Diagonal (Top Right to Bottom Left):** The shapes change from a circle to a triangle to a hexagon.
+
+2. **Look for Common Pattern Types:**
+   - The shapes are consistently changing from a circle to a triangle to a hexagon.
+   - There is a rotation involved in the shapes.
+
+3. **Identify Unique Features in the Shapes:**
+   - The shapes are geometric figures (circle, triangle, hexagon).
+   - The shapes are presented in different shades of gray.
+
+4. **Eliminate Options that Clearly Do Not Match the Observed Patterns:**
+   - Options A, B, C, D, E, F, G, and H need to be examined to see if they follow the pattern of changing from a circle to a triangle to a hexagon.
+   - Options that do not follow this sequence or do not have the correct shapes can be eliminated.
+
+### Conclusion:
+
+After carefully analyzing the patterns and the options provided, the correct answer is:
+
+**The correct answer is: H.**"
+12,Datasets/4_comp/output_data/oa_ns_oc_distribute_nine_RAVEN_9940_train.png,G,**H**.,False,"To solve this IQ test question, we need to carefully analyze the patterns in the 3x3 grid and deduce the correct shape that should be placed in the bottom-right box marked with an 'x'.
+
+### Step-by-Step Analysis:
+
+1. **Observe the Changes Across Rows:**
+   - **First Row:** The shapes change from triangles to pentagons to circles.
+   - **Second Row:** The shapes change from triangles to pentagons to circles.
+   - **Third Row:** The shapes change from triangles to pentagons to circles.
+
+   **Pattern:** The shapes transition from triangles to pentagons to circles in each row.
+
+2. **Observe the Changes Across Columns:**
+   - **First Column:** The shapes change from light gray to dark gray to black.
+   - **Second Column:** The shapes change from light gray to dark gray to black.
+   - **Third Column:** The shapes change from light gray to dark gray to black.
+
+   **Pattern:** The color of the shapes transitions from light gray to dark gray to black in each column.
+
+3. **Observe the Changes Across Diagonals:**
+   - **Main Diagonal (Top Left to Bottom Right):** The shapes change from triangles to pentagons to circles.
+   - **Secondary Diagonal (Top Right to Bottom Left):** The shapes change from circles to pentagons to triangles.
+
+   **Pattern:** The main diagonal follows the same pattern as the rows, while the secondary diagonal shows a reverse pattern.
+
+### Conclusion:
+
+Based on the observed patterns:
+- **Shape Pattern:** Triangles to pentagons to circles.
+- **Color Pattern:** Light gray to dark gray to black.
+
+For the bottom-right box marked with 'x':
+- The shape should be a circle (following the row pattern).
+- The color should be black (following the column pattern).
+
+### Eliminating Options:
+- **A:** Light gray circle (does not match the color pattern).
+- **B:** Dark gray triangle (does not match the shape pattern).
+- **C:** Light gray pentagon (does not match the color pattern).
+- **D:** Dark gray circle (does not match the color pattern).
+- **E:** Dark gray pentagon (does not match the shape pattern).
+- **F:** Black pentagon (does not match the shape pattern).
+- **G:** Light gray circle (does not match the color pattern).
+- **H:** Black circle (matches both the shape and color pattern).
+
+### Final Answer:
+
+The correct answer is: **H**."
