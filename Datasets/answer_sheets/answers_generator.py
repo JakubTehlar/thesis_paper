@@ -28,7 +28,8 @@ def create_data(images_path_local: str, config: str, img_dir_in_csv: str):
                 if filename.endswith(".png"):
                     question = filename.split(".")[0]
                     img_path = os.path.join(img_dir, question + ".png")
-                    question_answer_path = f"{images_path_local}{dataset}_{config}_{question}.txt"
+                    # question_answer_path = f"{images_path_local}{dataset}_{config}_{question}.txt"
+                    question_answer_path = os.path.join(img_dir, question + ".txt")
                     with open(question_answer_path, "r") as f:
                         answer = f.read().replace("\n", "")
                     img_path_in_csv = os.path.join(img_dir_in_csv, dataset, config, question + ".png")
