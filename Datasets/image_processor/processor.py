@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+import cv2
 
 def save_rpm_question_image(array, output_path):
     """
@@ -30,6 +31,17 @@ def save_rpm_question_image(array, output_path):
         start_row = row * height
         start_col = col * width
         canvas[start_row:start_row + height, start_col:start_col + width] = array[idx]
+
+    # === Draw grid lines for the 3x3 matrix ===
+    # Vertical lines
+    for i in range(1, grid_size):
+        x = i * width
+        cv2.line(canvas, (x, 0), (x, height * grid_size), color=0, thickness=2)
+
+    # Horizontal lines
+    for i in range(1, grid_size):
+        y = i * height
+        cv2.line(canvas, (0, y), (width * grid_size, y), color=0, thickness=2)
 
     # Add "X" in the missing cell
     x_start_row = 2 * height
@@ -132,7 +144,7 @@ def unpack_npz_to_png(npz_file, output_path):
             print(f"Skipping key '{key}': Invalid array shape {array.shape}")
 
 
-def process_npz_files_in_directory(input_dir, output_dir):
+def process_npz_files_in_directory(input_directory, output_directory):
     """
     Recursively searches for .npz files in the input directory,
     and unpacks them to the output directory.
@@ -141,23 +153,27 @@ def process_npz_files_in_directory(input_dir, output_dir):
         input_dir (str): Directory to search for .npz files.
         output_dir (str): Directory to save the unpacked images.
     """
-    for root, _, files in os.walk(input_dir):
+    for root, _, files in os.walk(input_directory):
         for file in files:
             if file.endswith(".npz"):
                 npz_path = os.path.join(root, file)
-                print(f"\n\nProcessing: {npz_path}")
                 npz_path_split = npz_path.split("/")
-                print(f"npz_path_split: {npz_path_split}")
-                config = npz_path_split[-3] + "_" + npz_path_split[-2]
+                config =  npz_path_split[-2]
+                dataset = npz_path_split[-3]
                 fname = npz_path_split[-1].split(".")[0]
-                output_path = os.path.join(output_dir, f"{config}_{fname}.png")
+                print(f"dataset: {dataset}, config: {config}, fname: {fname}")
+                output_dir = os.path.join(output_directory, dataset, config)
+                output_path = os.path.join(output_dir, f"{fname}.png")
+                print(f"Output path: {output_path}")
+
+                if not os.path.exists(output_dir):
+                    os.makedirs(output_dir)
                 if os.path.isdir(output_path):
                     print(f"Error: '{output_path}' is a directory, not a file path!")
 
-                print(f"Output path: {output_path}")
                 unpack_npz_to_png(npz_path, output_path)
 
 
-input_directory = "../4_comp/input_data/"
-output_directory = "../4_comp/output_data/" 
+input_directory = "../3_comp/input_data"
+output_directory = "../3_comp/output_data" 
 process_npz_files_in_directory(input_directory, output_directory)
