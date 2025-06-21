@@ -60,7 +60,7 @@ def save_rpm_question_image(array, output_path):
     
     # Try to load a font
     try:
-        font = ImageFont.truetype("0xProtoNerdFont-Regular.ttf", size=int(height * 0.3))
+        font = ImageFont.truetype("0xProtoNerdFont-Regular.ttf", size=int(height * 0.25))
     except IOError:
         print("Font not found, using default font.")
         font = ImageFont.load_default(size=int(height * 0.3))
@@ -89,8 +89,8 @@ def save_rpm_question_image(array, output_path):
 
         # **Draw vertical line after each candidate answer except the last**
         if candidate_idx < 7:
-            separator_x = (candidate_idx + 1) * width
-            draw.line([(separator_x, start_row), (separator_x, canvas_height)], fill=0, width=2)
+            separator_x = (candidate_idx + 1) * width - 10
+            draw.line([(separator_x, start_row), (separator_x, canvas_height)], fill=0, width=4)
 
     # Save the final image
     try:
@@ -174,6 +174,6 @@ def process_npz_files_in_directory(input_directory, output_directory):
                 unpack_npz_to_png(npz_path, output_path)
 
 
-input_directory = "../3_comp/input_data"
-output_directory = "../3_comp/output_data" 
+input_directory = "../4_comp/input_data"
+output_directory = "../4_comp/output_data" 
 process_npz_files_in_directory(input_directory, output_directory)
